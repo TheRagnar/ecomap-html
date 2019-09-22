@@ -58,10 +58,10 @@
 
 $breakpoints: (
     xs: 0,
-    sm: 544px,
+    sm: 576px,
     md: 768px,
     lg: 992px,
-    xl: 1200px
+    xl: 1366px
 ) !default;
 
 /* 
@@ -94,6 +94,21 @@ $breakpoints: (
     $max-width: get-next($breakpoint, $map: $breakpoints);
     @media (max-width: $max-width - 1) {
         @content;
+    }
+}
+
+@mixin media-only($breakpoint, $map: $breakpoints) {
+    @if type-of($map) == map {
+        @if map-has-key($map, $breakpoint) {
+            @media only screen and (max-width: #{map-get($map, $breakpoint)}) {
+                @content;
+            }
+        } @else {
+            @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+      + "Please make sure it is defined in breakpoints map.";
+        }
+    } @else {
+        @warn "Unfortunately, the map `#{$map}` isn't defined or is invalid.";
     }
 }
 

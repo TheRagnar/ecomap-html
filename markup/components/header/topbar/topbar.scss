@@ -1,0 +1,133 @@
+.topbar {
+    background-color: $palette-bg;
+    color: $palette-primary;
+    font-size: rem(14);
+    line-height: 1;
+    svg {
+        fill: $palette-primary;
+    }
+    &__top {
+        display: flex;
+        align-items: center;
+    }
+    &__icon {
+        @include all-center;
+    }
+    &__right {
+        flex-wrap: wrap;
+        display: flex;
+    }
+    &__item {
+        @include all-center;
+    }
+    &__text {
+        display: none;
+    }
+    &-search,
+    &-user {
+        &__content {
+            display: none;
+        }
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        color: $palette-primary;
+        text-decoration: none;
+        &:hover{
+            color: $palette-secondary;
+            text-decoration: none;
+            svg{
+                fill: $palette-secondary;
+            }
+        }
+        svg {
+            margin-left: 6px;
+        }
+    }
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    @include media-max(md) {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        &__right {
+            margin-left: -2.5px;
+            margin-right: -2.5px;
+        }
+        &__item {
+            margin-left: 2.5px;
+            margin-right: 2.5px;
+        }
+        &__icon {
+            width: 28px;
+            height: 28px;
+            border: 2px solid $palette-primary;
+            border-radius: 50%;
+            svg {
+                fill: $palette-primary;
+                width: 16px;
+                height: auto;
+            }
+        }
+    }
+    @include media-max(sm) {
+        &__left{
+            display: none;
+        }
+    }
+    @include media(lg) {
+        &__icon{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        &__item{
+            cursor: pointer;
+            &:hover {
+                color: #fff;
+                svg{
+                    fill: #fff;
+                }
+            }
+            &:not(:last-child){
+                margin-right: 10px;
+            }
+        }
+        &__black{
+            background-color: $palette-main;
+            padding-left: 15px;
+            padding-right: 15px;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 0.14px;
+            padding-top: 17px;
+            padding-bottom: 17px;
+            &:hover{
+
+            }
+            svg{
+                fill: #fff;
+            }
+        }
+        &__black &__text{
+            display: block;
+        }
+    }
+    @include media(xl) {
+        &__icon{
+            padding: 0;
+            margin-right: 12px;
+        }
+        &__item{
+            &:not(:last-child){
+                margin-right: 32px;
+            }
+        }
+        &__text{
+            display: block;
+        }
+    }
+}

@@ -1,1 +1,39 @@
-{{> header/top-bar/top-bar }}
+{{> header/topbar/topbar }}
+
+<header class="header">
+    <div class="container header__container">
+        <div class="header__logo">
+            {{> logo/logo }}
+        </div>
+        <div class="header__right">
+            <div class="header__menu">
+                {{> menu/menu }}
+            </div>
+            <div class="header__tab">
+                <a href="" class="btn">Экокарта</a><a href="" class="btn">Экопроекты</a>
+            </div>
+        </div>
+    </div>
+    <div class="header-mobile">
+        <div class="container">
+            <div class="header-mobile__visible">
+                <div class="header__logo">
+                    {{> logo/logo }}
+                </div>
+                <div class="header-hamburger">
+                    <div class="header-hamburger__line"></div>
+                    <div class="header-hamburger__line"></div>
+                    <div class="header-hamburger__line"></div>
+                </div>
+            </div>
+            <div class="header-mobile__content">
+                <div class="header__menu">
+                    {{> menu/menu-clear }}
+                </div>
+                <div class="header__footer">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

@@ -1,0 +1,30 @@
+.logo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    &__img{
+        @include all-center;
+        justify-content: flex-start;
+        margin-right: 20px;
+    }
+    &__title{
+        color: $palette-main;
+        font-size: rem(16);
+        font-weight: 700;
+        line-height: rem(21);
+    }
+    @include media-only(md) {
+        &__img{
+            width: 38px;
+            margin-right: 12px;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        &__title{
+            font-size: rem(12);
+            line-height: rem(19);
+        }
+    }
+}

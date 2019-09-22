@@ -1,0 +1,122 @@
+.menu{
+    display: flex;
+    align-items: center;
+    position: relative;
+    &.active &__more{
+        display: block;
+    }
+    &__more{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        top: 30px;
+        width: 260px;
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.15);
+        background-color: #fff;
+        right: -12px;
+        display: none;
+        &:after{
+            position: absolute;
+            content: '';
+            border: 6px solid transparent;
+            border-bottom: 6px solid #fff;
+            z-index: 2;
+            top: -12px;
+            right: 12px;
+        }
+        li{
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+    &__more &__link{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        display: block;
+    }
+    &__items{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        margin-left: -15px;
+        margin-right: -15px;
+        width: 350px;
+        overflow: hidden;
+        line-height: 1;
+    }
+    &__item{
+        padding: 0;
+        margin: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    &__link{
+        font-weight: 700;
+        color: $palette-main;
+        white-space: nowrap;
+        transition: all ease-in-out .3s;
+        &:hover{
+            color: $palette-secondary;
+        }
+    }
+    &__dots{
+        width: 18px;
+        height: 4px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 40px;
+        cursor: pointer;
+        &:after,
+        &::before{
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background-color: $palette-main;
+            position: relative;
+            content: '';
+            display: block;
+        }
+    }
+    &__line{
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: $palette-main;
+        position: relative;
+        &:after{
+            position: absolute;
+            cursor: pointer;
+            left: -10px;
+            right: -10px;
+            top: -10px;
+            bottom: -10px;
+            content: '';
+        }
+    }
+    @include media-only(xl){
+        &__item{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        &__items{
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+        &__dots{
+            margin-left: 20px;
+        }
+    }
+    @include media-only(lg){
+        &__items{
+            width: 100%;
+        }
+    }
+}
