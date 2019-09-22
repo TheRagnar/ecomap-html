@@ -1,0 +1,20 @@
+code, kbd, samp {
+    font-size: 1em;
+    font-family: monospace, monospace;
+}
+mark, kbd, code {
+    display: inline-block;
+    padding: 0 4px;
+    vertical-align: middle;
+    border-radius: 3px;
+}
+pre, code {
+    overflow: hidden;
+    font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    background-color: #e9ecef;
+}
