@@ -1,0 +1,83 @@
+<div class="breadcrumbs">
+    <div class="container">
+        <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+                <a href="#" class="breadcrumbs__link">Главная</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="projects">
+    <div class="container">
+        <div class="page-header">
+            <div class="page-title">Экологические проекты</div>
+
+            <div class="page-tab">
+                <div class="page-tab__item active">По рейтингу</div>
+                <div class="page-tab__item">По дате</div>
+            </div>
+        </div>
+
+        <div class="tags">
+            <div class="tags__item">Парки, рекреационные зоны</div>
+            <div class="tags__item">Зелёные насаждения</div>
+            <div class="tags__item">Водные объекты</div>
+            <div class="tags__item">Застройка города</div>
+            <div class="tags__item">Зоны заражений</div>
+            <div class="tags__item">Зоны затопления</div>
+            <div class="tags__item">Пункты приема вторсырья, ТКО</div>
+            <div class="tags__more"></div>
+        </div>
+
+        <div class="projects__list">
+            {{#each projects.project}}
+            <div class="projects__item">
+                <div class="projects__header">
+                    <div class="projects__info">{{this.date}}</div>
+                    <div class="projects__rating">{{this.rating}}</div>
+                </div>
+
+                <a href="#" class="projects__title">{{this.title}}</a>
+
+                <div class="projects__footer">
+                    <div class="projects__info">{{this.info}}</div>
+                    <div class="projects__image">
+                        <img src="{{this.image}}" alt="">
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+
+        <div class="pagination">
+            <ul class="pagination__list">
+                <li class="pagination__item pagination__prev">
+                    <a href="#"  class="pagination__link"></a>
+                </li>
+
+                <li class="pagination__item active">
+                    <a href="#"  class="pagination__link">1</a>
+                </li>
+
+                <li class="pagination__item">
+                    <a href="#"  class="pagination__link">2</a>
+                </li>
+
+                <li class="pagination__item">
+                    <a href="#"  class="pagination__link">3</a>
+                </li>
+
+                <li class="pagination__item">
+                    <a href="#"  class="pagination__link">4</a>
+                </li>
+
+                <li class="pagination__item pagination__next">
+                    <a href="#"  class="pagination__link"></a>
+                </li>
+            </ul>
+
+            <button class="btn border-btn">Показать еще</button>
+        </div>
+    </div>
+</div>

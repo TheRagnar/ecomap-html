@@ -34,7 +34,7 @@ paths.push(
 );
 
 /**
- * Create fs for project
+ * Create fs for projects
  */
 module.exports = () => {
     return gulp.task('service:create-fs', done => {
