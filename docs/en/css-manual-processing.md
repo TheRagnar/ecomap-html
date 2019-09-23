@@ -15,16 +15,16 @@ Main entry points, style files which will contain imports for project style, are
 ```scss
 @import '../normalize.scss';
 
-/* Libraries, which is used in current project. */
+projects
 @import 'partials/_libraries.scss';
 
-/* Libraries, which is used in current project. */
+projects
 @import 'built-in-partials/_service.scss';
 
-/* Plugins, which is used in current project. */
+projects
 @import 'partials/_plugins.scss';
 
-/* Components, which is used in current project. */
+projects
 @import 'partials/_components.scss';
 
 /* Additional style files. */
