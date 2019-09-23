@@ -1650,6 +1650,145 @@ pre, code {
           box-shadow: none;
 }
 
+.footer {
+  background-color: #3b4256;
+  padding-top: 80px;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__logo .logo__img {
+  margin-right: 25px;
+}
+
+.footer__logo .logo__title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #fff;
+}
+
+.footer__left {
+  width: 410px;
+}
+
+.footer__descript {
+  line-height: 26px;
+  font-size: 15px;
+  color: #ffffff;
+  margin-top: 80px;
+  margin-bottom: 46px;
+}
+
+.footer__descript a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__descript a:hover {
+  color: #18b4bb;
+}
+
+.footer__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #848e99;
+  font-weight: 500;
+  line-height: 30px;
+  font-size: 15px;
+}
+
+.footer__link svg,
+.footer__link img {
+  fill: #818795;
+  margin-right: 15px;
+}
+
+.footer__link:hover {
+  color: #818795;
+}
+
+.footer__link:not(:last-child) {
+  margin-bottom: 22px;
+}
+
+.footer__menu {
+  width: 595px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 36px;
+}
+
+.footer__row {
+  width: 50%;
+}
+
+.footer__title {
+  color: #848e99;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.footer__lists {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer__lists li {
+  padding: 0;
+  margin: 0;
+  line-height: 24px;
+}
+
+.footer__lists li:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.footer__lists a {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer__lists a:hover {
+  color: #18b4bb;
+}
+
+.footer__container:nth-child(2) {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 42px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border-top: 1px solid #4f5769;
+}
+
+.footer__container .footer__link {
+  font-size: 13px;
+  line-height: 16px;
+  margin-bottom: 0;
+}
+
+.footer__copyr {
+  font-size: 13px;
+  line-height: 16px;
+  color: #fff;
+}
+
 .header {
   background-color: #fff;
 }

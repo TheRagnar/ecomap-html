@@ -2,21 +2,21 @@
     <div class="container footer__container">
         <div class="footer__left">
             <div class="footer__logo">
-                {{> logo/logo }}
+                {{> logo/logo-footer }}
             </div>
             <div class="footer__descript">
-                Телефон: <a href="tel:+7 (831) 435-63-35">+7 (831) 435-63-35</a>
-                Адрес: 603082, Нижний Новгород, Кремль, корпус 14                    
+                Телефон: <a href="tel:+7 (831) 435-63-35">+7 (831) 435-63-35</a><br>
+                Адрес: 603082, Нижний Новгород, Кремль, корпус 14
             </div>
             <div class="footer__links">
-                <a href="/" class="footer__link">Все контакты</a>
-                <a href="/" class="footer__link">Подать жалобу</a>
+                <a href="/" class="footer__link">{{Icon iconName="map2"}}Все контакты</a>
+                <a href="/" class="footer__link">{{Icon iconName="outline-mail"}}Подать жалобу</a>
             </div>
         </div>
         <div class="footer__right">
             <div class="footer__menu">
                 <div class="footer__row">
-                    <div class="footer__title"></div>
+                    <div class="footer__title">Основные разделы</div>
                     <ul class="footer__lists">
                         <li><a href="">О проекте</a></li>
                         <li><a href="">Экологическая карта</a></li>
@@ -25,7 +25,22 @@
                         <li><a href="">Правовая база  </a></li>
                     </ul>
                 </div>
+                <div class="footer__row">
+                    <div class="footer__title">Дополнительные возможности</div>
+                    <ul class="footer__lists">
+                        <li><a href="">Вопросы и ответы</a></li>
+                        <li><a href="">Поиск по сайту</a></li>
+                        <li><a href="">Техническая поддержка</a></li>
+                        <li><a href="">Правовая информация</a></li>
+                        <li><a href="">Личный кабинет</a></li>
+                    </ul>
+                </div>
             </div>
+            <div class="footer__link">{{Icon iconName="error-warning-line"}}Нашли опечатку? Выделите текст и нажмите Ctrl+Enter </div>
         </div>
+    </div>
+    <div class="container footer__container">
+        <div class="footer__link"><img src="%=static=%img/general/cc.png" alt="">Все материалы сайта доступны по лицензии: <br>Creative Commons «Attribution» 4.0 Всемирная</div>
+        <div class="footer__copyr">© 2011-2019 гг. Администрация г. Нижнего Новгорода, Условия размещения информации</div>
     </div>
 </footer>
