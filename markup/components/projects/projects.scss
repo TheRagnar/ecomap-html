@@ -33,6 +33,7 @@
 .page-header {
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid #d0d4dd;
 }
 
 .page-title {
@@ -46,10 +47,12 @@
     display: flex;
 
     &__item {
+        margin-bottom: -2px;
         margin-left: 35px;
         font-size: 16px;
         line-height: 1.25;
-        padding-bottom: 30px;
+        padding-bottom: 25px;
+        padding-top: 5px;
         font-weight: 600;
         cursor: pointer;
 
@@ -60,6 +63,26 @@
         &.active {
             color: $palette-secondary;;
             border-bottom: 2px solid $palette-secondary;
+        }
+    }
+}
+
+@include media-only(md) {
+    .page-header {
+        flex-direction: column;
+        border-bottom: 1px solid #d0d4dd;
+    }
+
+    .page-title {
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .page-tab {
+        &__item {
+            &:first-child {
+                margin-left: auto;
+            }
         }
     }
 }
@@ -91,6 +114,9 @@
 
     }
     @include media-only(md) {
+
+    }
+    @include media-only(sm) {
 
     }
 }
@@ -161,11 +187,36 @@
 
     &__next {
         background-image: url("../img/general/pagination-next.svg");
+        margin-right: 0;
     }
 
     &__prev {
         background-image: url("../img/general/pagination-prev.svg");
         transform: rotate(180deg);
+    }
+
+    @include media-only(lg) {
+        flex-direction: column;
+
+        .border-btn {
+            order: 1;
+            width: 100%;
+            margin-bottom: 28px;
+        }
+
+        &__list {
+            order: 2;
+            margin: 0 auto;
+        }
+    }
+
+    @include media-only(md) {
+        &__link {
+            width: 40px;
+            min-width: 40px;
+            height: 40px;
+            line-height: 40px;
+        }
     }
 }
 
