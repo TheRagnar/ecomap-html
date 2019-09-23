@@ -1,1 +1,108 @@
-
+.footer{
+    background-color: $palette-bg;
+    padding-top: 80px;
+    &__container{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo{
+        .logo__img{
+            margin-right: 25px;
+        }
+        .logo__title{
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 30px;
+            color: #fff;
+        }
+    }
+    &__left{
+        width: 410px;
+    }
+    &__descript{
+        line-height: 26px;
+        font-size: 15px;
+        color: #ffffff;
+        margin-top: 80px;
+        margin-bottom: 46px;
+        a{
+            color: #fff;
+            text-decoration: none;
+            &:hover{
+                color: $palette-secondary;
+            }
+        }
+    }
+    &__link{
+        display: flex;
+        align-items: center;
+        color: #848e99;
+        font-weight: 500;
+        line-height: 30px;
+        font-size: 15px;
+        svg,
+        img{
+            fill: #818795;
+            margin-right: 15px;
+        }
+        &:hover{
+            color: #818795;
+        }
+        &:not(:last-child){
+            margin-bottom: 22px;
+        }
+    }
+    &__menu{
+        width: 595px;
+        display: flex;
+        margin-bottom: 36px;
+    }
+    &__row{
+        width: 50%;
+    }
+    &__title{
+        color: #848e99;
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    &__lists{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        li{
+            padding: 0;
+            margin: 0;
+            line-height: 24px;
+            &:not(:last-child){
+                margin-bottom: 16px;
+            }
+        }
+        a{
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 500;
+            &:hover{
+                color: $palette-secondary;
+            }
+        }
+    }
+    &__container{
+        &:nth-child(2){
+            align-items: center;
+            margin-top: 42px;
+            padding-top: 32px;
+            padding-bottom: 32px;
+            border-top: 1px solid #4f5769;
+        }
+    }
+    &__container &__link{
+        font-size: 13px;
+        line-height: 16px;
+        margin-bottom: 0;
+    }
+    &__copyr{
+        font-size: 13px;
+        line-height: 16px;
+        color: #fff;
+    }
+}
