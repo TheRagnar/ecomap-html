@@ -1,0 +1,104 @@
+<div class="article">
+    <div class="breadcrumbs">
+        <div class="container">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                    <a href="#" class="breadcrumbs__link">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a href="articles.html" class="breadcrumbs__link">Статьи</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="article__wrap">
+            <div class="article__content">
+                <div class="article__title">{{article.item.0.title}}</div>
+                <div class="article__date">{{article.item.0.date}}</div>
+                <div class="article__image">
+                    <img src="{{{article.item.0.image}}}" alt="">
+                </div>
+
+                <div class="article__text">
+                    {{{article.item.0.text}}}
+                </div>
+
+                <div class="project__footer">
+                    <a href="articles.html" class="project__comeback"><i class="fas fa-chevron-left"></i>Вернуться к
+                        списку</a>
+
+                    <div class="project__footer-social">
+                        <div>Поделиться проектом</div>
+                        <a href="javascript:void(0)"><i class="fab fa-vk"></i></a>
+                        <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
+                        <a href="javascript:void(0)"><i class="fab fa-odnoklassniki"></i></a>
+                        <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="article__sidebar sidebar">
+                <div class="sidebar__btn">
+                    <a class="btn"><i class="icon-print"></i>Печать</a>
+                    <a class="btn">Поделиться</a>
+                </div>
+
+                <ul class="sidebar-tab">
+                    <li class="sidebar-tab__item active">
+                        <a class="sidebar-tab__link" href="#">Статьи</a>
+                    </li>
+                    <li class="sidebar-tab__item">
+                        <a class="sidebar-tab__link" href="#">Экожурнал</a>
+                    </li>
+                    <li class="sidebar-tab__item">
+                        <a class="sidebar-tab__link" href="#">Правовая база</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="popular-article">
+            <div class="popular-article__title">
+                <div class="h2">Другие статьи</div>
+                <a href="articles.html" class="popular-article__more">Все статьи <i class="fa fa-chevron-right"></i></a>
+            </div>
+
+            <div class="articles__item">
+                <div class="articles__image">
+                    <img src="static/img/general/article/1.png" alt="">
+                </div>
+
+                <div class="articles__info">
+                    <a href="article.html" class="articles__name">Где сдать отходы?</a>
+                    <div class="articles__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
+                    <div class="articles__date">19 января 2019 года</div>
+                </div>
+            </div>
+
+            <div class="articles__item">
+                <div class="articles__image">
+                    <img src="static/img/general/article/2.png" alt="">
+                </div>
+
+                <div class="articles__info">
+                    <a href="article.html" class="articles__name">Где сдать отходы?</a>
+                    <div class="articles__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
+                    <div class="articles__date">19 января 2019 года</div>
+                </div>
+            </div>
+
+            <div class="articles__item">
+                <div class="articles__image">
+                    <img src="static/img/general/article/3.png" alt="">
+                </div>
+
+                <div class="articles__info">
+                    <a href="article.html" class="articles__name">Где сдать отходы?</a>
+                    <div class="articles__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
+                    <div class="articles__date">19 января 2019 года</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
