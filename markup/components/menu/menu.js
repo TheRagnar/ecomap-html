@@ -32,4 +32,6 @@ function calcWidth(){
     } else {
         $('.menu__dots').hide();
     }
-}
+};
+
+
