@@ -139,9 +139,11 @@
 
     &__item {
         border-left: 1px solid #d5dae0;
+        padding-left: 0;
 
         &.active {
             border-color: $palette-secondary;
+            margin-left: -1px;
 
             .sidebar-tab__link {
                 border-color: $palette-secondary;

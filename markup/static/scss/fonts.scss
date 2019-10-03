@@ -16,13 +16,11 @@
 // Var for using custom font
 $CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
 */
-@font-face {
-    font-family: 'GOST';
-    src: url('../fonts/GOST.eot');
-    src: local('../fonts/GOST'), local('GOST'),
-    url('../fonts/GOST.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/GOST.woff') format('woff'),
-    url('../fonts/GOST.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900&display=swap');
+
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
 }

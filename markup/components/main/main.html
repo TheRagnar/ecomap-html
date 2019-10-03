@@ -1,0 +1,110 @@
+<div class="main-map">
+    <!--<div class="main-map__content">
+        <div class="map-controll">
+            <div class="map-controll__header">
+                <div>Фильтр</div>
+
+            </div>
+        </div>
+    </div>-->
+</div>
+
+<div class="main-banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="main-banner__box">
+                    <div class="main-banner__content">
+                        <a href="#" class="btn border-btn small-btn">Прием обращений</a>
+                        <div class="h2">Гражданский контроль</div>
+                        <div class="medium-text">Прием жалоб с фото-видео фиксацией правонарушений в сфере экологии
+                        </div>
+
+                        <a href="#" class="btn white-btn">Сообщить о нарушении</a>
+                    </div>
+                    <div class="main-banner__img">
+                        <img src="static/img/general/main-banner.png" alt="">
+                    </div>
+                    <div class="main-banner__btn">
+                        <a href="#" class="btn white-btn">Сообщить о нарушении</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="projects">
+    <div class="container">
+
+        <div class="main-title">
+            <div class="page-title">Экологические проекты</div>
+            <a href="projects.html" class="main-title__more">Все проекты<i class="fas fa-chevron-right"></i></a>
+        </div>
+        <div class="projects__list">
+            {{#each projects.project}}
+            <div class="projects__item">
+                <div class="projects__header">
+                    <div class="projects__info">{{this.date}}</div>
+                    <div class="projects__rating">{{this.rating}}</div>
+                </div>
+
+                <div class="projects__title">{{this.title}}</div>
+
+                <div class="projects__footer">
+                    <div class="projects__info">{{this.info}}</div>
+                    <div class="projects__image">
+                        <img src="{{this.image}}" alt="">
+                    </div>
+                </div>
+
+                <div class="projects__btn">
+                    <a href="project0.html" class="btn border-btn">Подробнее</a>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>
+
+<div class="articles">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="main-title">
+                    <div class="page-title">Полезно знать</div>
+                    <a href="projects.html" class="main-title__more">Все проекты<i class="fas fa-chevron-right"></i></a>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="main-article" style="background-image: url('static/img/general/article/1.png')">
+                            <div class="h2 main-article__title">Где сдать отходы?</div>
+                            <p class="main-article__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                sed do eiusmod.</p>
+                            <a href="article.html" class="btn border-btn">Читать статью</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="main-article" style="background-image: url('static/img/general/article/2.png')">
+                            <div class="h2 main-article__title">Где сдать отходы?</div>
+                            <p class="main-article__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                sed do eiusmod.</p>
+                            <a href="article.html" class="btn border-btn">Читать статью</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="main-article" style="background-image: url('static/img/general/article/3.png')">
+                            <div class="h2 main-article__title">Где сдать отходы?</div>
+                            <p class="main-article__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                sed do eiusmod.</p>
+                            <a href="article.html" class="btn border-btn">Читать статью</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
