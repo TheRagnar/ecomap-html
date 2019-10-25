@@ -169,3 +169,17 @@
         }
     }
 }
+
+.sidebar .sidebar__info {
+    font-size: 15px;
+    margin-bottom: 20px;
+    .text-2 {
+        font-weight: 400;
+        line-height: 1.2;
+        margin-bottom: 10px;
+    }
+    .text-2:last-child {
+        margin-bottom: 20px;
+    }
+}
+

@@ -19,8 +19,27 @@ $CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
 
 
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
 }
+
+
+
+// @font-face {
+//     font-family: "GOSTUI2";
+//     src: url('../fonts/GOST.eot');
+//     src: url('../fonts/GOST.eot?#iefix') format('embedded-opentype'),
+//         url('../fonts/GOST.woff') format('woff');
+//     font-weight: 400; 
+//     font-style: normal; 
+// }
+
+
+// Var for using custom font
+// $GOSTUI2: "GOSTUI2",
+// Helvetica,
+// Arial,
+// sans-serif;
+

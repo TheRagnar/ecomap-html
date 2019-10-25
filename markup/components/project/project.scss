@@ -19,6 +19,7 @@
         font-weight: bold;
         line-height: 1.2;
         margin-bottom: 55px;
+        // font-family: "GOSTUI2";
     }
 
     &__text {
@@ -149,6 +150,8 @@
         }
     }
 }
+
+
 
 .sidebar {
     width: 312px;
@@ -290,4 +293,68 @@
             }
         }
     }
+}
+
+
+
+.rating {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    &__label {
+        font-size: 14px;
+    }
+    &__num {
+        color: #ffffff;
+        font-weight: 700;
+        background: #18b4bb;
+        border-radius: 4px;
+        font-size: 18px;
+        padding: 7px 16px;
+        line-height: 0.9;
+        align-self: center;
+    }
+}
+
+.info-project {
+    margin-bottom: 20px;
+    &__title {
+        padding-bottom: 23px;
+        margin-bottom: 23px;
+        position: relative;
+        h3 {
+            margin: 0;
+            font-size: 16px;
+        }
+    }
+    &__img {
+        align-self: center;
+        margin-bottom: 20px;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    &__name {
+        font-weight: 600;
+        font-size: 16px;
+    }
+    &__descrip {
+        display: flex;
+        flex-flow: column;
+        margin-bottom: 20px;
+    }
+}
+
+.info-project__title::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    width: 100%;
+    background-color: rgb(208, 212, 221);
 }
