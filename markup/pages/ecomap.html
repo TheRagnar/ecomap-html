@@ -9,9 +9,44 @@
     %=symbols=%
 
     {{> header/header }}
+    <div class="breadcrumbs">
+        <div class="container">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                    <a href="#" class="breadcrumbs__link">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a href="#" class="breadcrumbs__link">Экологические проекты </a>
+                </li>
+            </ul>
+        </div>
+    </div>
 
-    <div>
-        {{> ecomap/ecomap }}
+    <div class="ecomap">
+        <div class="container">
+            <div class="ecomap__header">
+                <h1 class="page__title">Экокарта города</h1>
+                <ul class="ecomap__tabs">
+                    <li class="ecomap__tab1 active">Карта</li>
+                    <li class="ecomap__tab2">Список</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="ecomap__content ecomap__map active">
+            {{> ecomap/ecomap }}
+        </div>
+        <div class="ecomap__content ecomap__list">
+            {{> ecomap/ecomap2 }}
+            <div class="container">
+                <div class="ecomap-list__footer">
+                    {{> pagination/pagination }}
+                    <a href="" class="btn gray-btn-2">Показать еще</a>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <!-- {{> footer/footer }} -->
