@@ -9,10 +9,6 @@
         <meta content="telephone=no" name="format-detection">
         <meta name="HandheldFriendly" content="true">
         <link rel="icon" type="image/x-icon" href="favicon.ico">
-        <link href="static/fonts/icomoon/style.css" rel="stylesheet" type="text/css">
-        <link href="static/css/separate-css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery/dist/css/lightgallery.min.css" />
@@ -315,7 +311,7 @@
             </div>
         </header>
         <div>
-            <div class="articles">
+            <section class="content-page">
                 <div class="breadcrumbs">
                     <div class="container">
                         <ul class="breadcrumbs__list">
@@ -326,105 +322,71 @@
                     </div>
                 </div>
 
+
                 <div class="container">
-                    <div class="page-title">Статьи</div>
-                    <div class="articles__list">
-                        <div class="articles__main">
-                            <div class="articles__image">
-                                <img src="static/img/general/article/2.png" alt="">
-                            </div>
+                    <!-- main -->
+                    <div class="row">
+                        <div class="col-md-8 col-12">
+                            <div class="page-title">Мой профиль</div>
 
-                            <div class="articles__info">
-                                <a href="article.html" class="articles__name">Где утилизировать?</a>
-                                <div class="articles__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</div>
-                                <div class="articles__date">19 января 2019 года</div>
+                            <div class="wrap-block">
+                                <div class="wrap-block__title h4">Личные данные</div>
+                                <div class="row mr-bottom-20">
+                                    <div class="col-lg-6">
+                                        <p class="gray-text">ФИО</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p>Блажевич Игорь Юрьевич</p>
+                                    </div>
+                                </div>
+
+                                <div class="row mr-bottom-15">
+                                    <div class="col-lg-6">
+                                        <p class="gray-text">E-mail</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p>awesome.fortesting@yandex.ru</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        <div class="col-md-4 col-12">
+                            <!-- aside -->
+                            <aside class="aside text-base">
+                                <div class="aside__box prof-info">
+                                    <div class="prof-info__box">
+                                        <div class="prof-info__icon">
+                                            <i class="icon-user"></i>
+                                        </div>
+                                        <div class="prof-info__mail">awesome.fortesting@yandex.ru</div>
+                                    </div>
+                                </div>
+                                <ul class="sidebar-tab">
+                                    <li class="sidebar-tab__item active">
+                                        <a class="sidebar-tab__link" href="#">Мой профиль</a>
+                                    </li>
+                                    <li class="sidebar-tab__item">
+                                        <a class="sidebar-tab__link" href="#">Мои обращения</a>
+                                    </li>
+                                    <li class="sidebar-tab__item">
+                                        <a class="sidebar-tab__link" href="#">Уведомления <span class="sidebar-tab__message">4</span></a>
+                                    </li>
 
-                        <div class="articles__item">
-                            <div class="articles__image">
-                                <img src="static/img/general/article/3.png" alt="">
-                            </div>
+                                    <li class="sidebar-tab__item">
+                                        <a class="sidebar-tab__link" href="#">Управление подписками</a>
+                                    </li>
+                                </ul>
 
-                            <div class="articles__info">
-                                <a href="article.html" class="articles__name">Виды отходов</a>
-                                <div class="articles__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</div>
-                                <div class="articles__date">19 января 2019 года</div>
-                            </div>
-                        </div>
-                        <div class="articles__item">
-                            <div class="articles__image">
-                                <img src="static/img/general/article/1.png" alt="">
-                            </div>
-
-                            <div class="articles__info">
-                                <a href="article.html" class="articles__name">Где сдать отходы?</a>
-                                <div class="articles__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</div>
-                                <div class="articles__date">19 января 2019 года</div>
-                            </div>
-                        </div>
-                        <div class="articles__item">
-                            <div class="articles__image">
-                                <img src="static/img/general/article/2.png" alt="">
-                            </div>
-
-                            <div class="articles__info">
-                                <a href="article.html" class="articles__name">Где утилизировать?</a>
-                                <div class="articles__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</div>
-                                <div class="articles__date">19 января 2019 года</div>
-                            </div>
-                        </div>
-                        <div class="articles__item">
-                            <div class="articles__image">
-                                <img src="static/img/general/article/3.png" alt="">
-                            </div>
-
-                            <div class="articles__info">
-                                <a href="article.html" class="articles__name">Виды отходов</a>
-                                <div class="articles__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</div>
-                                <div class="articles__date">19 января 2019 года</div>
-                            </div>
-                        </div>
-                        <div class="articles__item">
-                            <div class="articles__image">
-                                <img src="static/img/general/article/1.png" alt="">
-                            </div>
-
-                            <div class="articles__info">
-                                <a href="article.html" class="articles__name">Где сдать отходы?</a>
-                                <div class="articles__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</div>
-                                <div class="articles__date">11 января 2019 года</div>
-                            </div>
-                        </div>
-                        <div class="articles__item">
-                            <div class="articles__image">
-                                <img src="static/img/general/article/2.png" alt="">
-                            </div>
-
-                            <div class="articles__info">
-                                <a href="article.html" class="articles__name">Где утилизировать?</a>
-                                <div class="articles__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</div>
-                                <div class="articles__date">12 января 2019 года</div>
-                            </div>
-                        </div>
-                        <div class="articles__item">
-                            <div class="articles__image">
-                                <img src="static/img/general/article/3.png" alt="">
-                            </div>
-
-                            <div class="articles__info">
-                                <a href="article.html" class="articles__name">Виды отходов</a>
-                                <div class="articles__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</div>
-                                <div class="articles__date">16 января 2019 года</div>
-                            </div>
+                                <button class="btn gray-btn">Выйти</button>
+                            </aside>
+                            <!-- end aside -->
                         </div>
                     </div>
+                    <!-- end main -->
 
-                    <div class="articles__more">
-                        <a href="javascript:void(0)">Показать больше <i class="fas fa-chevron-down"></i></a>
-                    </div>
                 </div>
-            </div>
+            </section>
+            <!-- page content end -->
         </div>
 
         <footer class="footer">
@@ -506,6 +468,7 @@
             </div>
         </footer>
         <link href="static/css/main.min.css" rel="stylesheet" type="text/css">
+
 
         <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

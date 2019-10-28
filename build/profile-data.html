@@ -9,10 +9,6 @@
         <meta content="telephone=no" name="format-detection">
         <meta name="HandheldFriendly" content="true">
         <link rel="icon" type="image/x-icon" href="favicon.ico">
-        <link href="static/fonts/icomoon/style.css" rel="stylesheet" type="text/css">
-        <link href="static/css/separate-css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery/dist/css/lightgallery.min.css" />
@@ -315,7 +311,7 @@
             </div>
         </header>
         <div>
-            <div class="articles">
+            <section class="content-page">
                 <div class="breadcrumbs">
                     <div class="container">
                         <ul class="breadcrumbs__list">
@@ -326,105 +322,160 @@
                     </div>
                 </div>
 
+
                 <div class="container">
-                    <div class="page-title">Статьи</div>
-                    <div class="articles__list">
-                        <div class="articles__main">
-                            <div class="articles__image">
-                                <img src="static/img/general/article/2.png" alt="">
-                            </div>
+                    <!-- main -->
+                    <div class="page-title mr-bottom-30">Мой профиль</div>
 
-                            <div class="articles__info">
-                                <a href="article.html" class="articles__name">Где утилизировать?</a>
-                                <div class="articles__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</div>
-                                <div class="articles__date">19 января 2019 года</div>
+                    <div class="row">
+                        <div class="col-md-8 col-12">
+                            <div class="medium-text wrap-text">
+                                <p>Просим Вас внимательно ознакомиться с <a href="#">порядком приема и рассмотрения обращений.</a>
+                                </p>
+                                <p>Информация о персональных данных авторов обращений, направленных в электронном виде, хранится и обрабатывается с соблюдением требований российского законодательства о персональных данных.</p>
+                                <p>Поступающие электронные обращения рассматриваются в соответствии с Федеральным законом от 02.05.2006 №59-ФЗ «О порядке рассмотрения обращений граждан Российской Федерации», Законом Нижегородской области от 07.09.2007 №124-З
+                                    <a
+                                    href="#">«О дополнительных гарантиях права граждан на обращение в Нижегородской области»,
+                                        </a>распоряжением администрации города Нижнего Новгорода от 10.05.2012 №193-р <a>«Об
+                                утверждении
+                                Положения о работе с обращениями граждан и организации личного приема граждан должностными
+                                лицами
+                                администрации города Нижнего Новгорода»</a> и другими нормативно-правовыми актами.</p>
+                                <p>Вы можете авторизоваться на Официальном сайте «Экокарта города Нижнего Новгорода» с помощью учетной записи Единого портала государственных услуг, чтобы отслеживать статус поданного обращения в Личном кабинете.
+                                </p>
+                                <p>При подаче обращения без авторизации логин и пароль к Личному кабинету будут направлены Вам на адрес электронной почты, указанный при подаче обращения. Используйте их для доступа в Личный кабинет.
+                                </p>
+
+                                <div class="wrap-block">
+                                    <p class="medium-text mr-bottom-30">Пожалуйста, заполните все поля, загрузите фотографии и/или видео с места экологической проблемы, напишите подробнее о ней и укажите адрес.</p>
+                                    <h6>Данные о заявителе</h6>
+
+                                    <div class="form-group not-empty mr-bottom-10">
+                                        <input type="text" placeholder="" class="form-group__input" value="Петроченко">
+                                        <label class="form-group__label">Фамилия</label>
+                                    </div>
+
+                                    <div class="form-group not-empty mr-bottom-10">
+                                        <input type="text" placeholder="" class="form-group__input" value="Нина">
+                                        <label class="form-group__label">Имя</label>
+                                    </div>
+
+                                    <div class="form-group not-empty mr-bottom-10">
+                                        <input type="text" placeholder="" class="form-group__input" value="Алексеевна">
+                                        <label class="form-group__label">Отчество</label>
+                                    </div>
+
+                                    <div class="form-group not-empty mr-bottom-40">
+                                        <input type="email" placeholder="" class="form-group__input" value="msph@mail.ru">
+                                        <label class="form-group__label">E-mail</label>
+                                    </div>
+
+
+                                    <h6>Описание Жалобы</h6>
+
+                                    <form class="mr-bottom-40">
+                                        <div class="mr-bottom-10">
+                                            <select class="select">
+                                                <option>Тема жалобы</option>
+                                                <option>Вариант 2</option>
+                                                <option>Вариант 3</option>
+                                                <option>Вариант 4</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="mr-bottom-10">
+                                            <select class="select">
+                                                <option>Категория жалобы</option>
+                                                <option>Вариант 2</option>
+                                                <option>Вариант 3</option>
+                                                <option>Вариант 4</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group not-empty mr-bottom-10">
+                                            <input type="text" placeholder="" class="form-group__input" value="Многоуровневые парковки вдоль железной дороги в мкр. Мещерское озеро">
+                                            <label class="form-group__label">Фамилия</label>
+                                        </div>
+
+                                        <div class="form-group not-empty mr-bottom-10">
+                                            <textarea class="form-group__textarea" value="">В мкр. Мещерское озеро в настоящее время размещаются разгрузочно-погрузочные площадки, сооруженные к ЧМ2018. Необходимость подобных парковок объясняется проблемой перезаполнения близлежащих дворов машинами и
+                                                служить дополнительным «экраном» от железной дороги. Подобные парковки имеются в Москве.</textarea>
+                                            <label class="form-group__label">Краткое описание (не более 3000 символов)</label>
+                                        </div>
+                                    </form>
+
+                                    <h6>Введите адрес или укажите место на карте</h6>
+                                    <form>
+                                        <div class="form-group not-empty">
+                                            <input type="text" placeholder="" class="form-group__input" value="Жилой район Мещерское Озеро, Нижний Новгород, Россия">
+                                            <label class="form-group__label">Адрес</label>
+                                        </div>
+
+                                        <div class="profile-map" id="profile-map"></div>
+
+                                        <div class="row">
+                                            <div class="col-lg-6"></div>
+                                            <div class="col-lg-6"></div>
+                                        </div>
+                                    </form>
+
+                                    <div class="row mr-bottom-40">
+                                        <div class="col-lg-6">
+                                            <div class="captcha">
+                                                <img src="static/img/general/captcha.png" class="img-fluid">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-checkbox">
+                                                <input type="checkbox" name="" id="check" class="form-checkbox__input">
+                                                <label for="check">С порядком приема и
+                                                    <a href="#">рассмотрения обращений ознакомлен(а)</a>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 mr-top-40">
+                                            <a href="#" class="btn base-btn form-btn">Отправить жалобу</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="articles__item">
-                            <div class="articles__image">
-                                <img src="static/img/general/article/3.png" alt="">
-                            </div>
+                        <div class="col-md-4 col-12">
+                            <!-- aside -->
+                            <aside class="aside text-base">
+                                <ul class="sidebar-tab">
+                                    <li class="sidebar-tab__item active">
+                                        <a class="sidebar-tab__link" href="#">Форма отправки жалобы</a>
+                                    </li>
 
-                            <div class="articles__info">
-                                <a href="article.html" class="articles__name">Виды отходов</a>
-                                <div class="articles__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</div>
-                                <div class="articles__date">19 января 2019 года</div>
-                            </div>
-                        </div>
-                        <div class="articles__item">
-                            <div class="articles__image">
-                                <img src="static/img/general/article/1.png" alt="">
-                            </div>
+                                    <li class="sidebar-tab__item">
+                                        <a class="sidebar-tab__link" href="#">Порядок приема и рассмотрения жалоб граждан</a>
+                                    </li>
 
-                            <div class="articles__info">
-                                <a href="article.html" class="articles__name">Где сдать отходы?</a>
-                                <div class="articles__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</div>
-                                <div class="articles__date">19 января 2019 года</div>
-                            </div>
-                        </div>
-                        <div class="articles__item">
-                            <div class="articles__image">
-                                <img src="static/img/general/article/2.png" alt="">
-                            </div>
+                                    <li class="sidebar-tab__item">
+                                        <a class="sidebar-tab__link" href="#">Жалобы граждан</a>
+                                    </li>
 
-                            <div class="articles__info">
-                                <a href="article.html" class="articles__name">Где утилизировать?</a>
-                                <div class="articles__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</div>
-                                <div class="articles__date">19 января 2019 года</div>
-                            </div>
-                        </div>
-                        <div class="articles__item">
-                            <div class="articles__image">
-                                <img src="static/img/general/article/3.png" alt="">
-                            </div>
+                                    <li class="sidebar-tab__item">
+                                        <a class="sidebar-tab__link" href="#">Правовая база</a>
+                                    </li>
 
-                            <div class="articles__info">
-                                <a href="article.html" class="articles__name">Виды отходов</a>
-                                <div class="articles__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</div>
-                                <div class="articles__date">19 января 2019 года</div>
-                            </div>
-                        </div>
-                        <div class="articles__item">
-                            <div class="articles__image">
-                                <img src="static/img/general/article/1.png" alt="">
-                            </div>
+                                    <li class="sidebar-tab__item">
+                                        <a class="sidebar-tab__link" href="#">Вопросы и ответы</a>
+                                    </li>
+                                </ul>
 
-                            <div class="articles__info">
-                                <a href="article.html" class="articles__name">Где сдать отходы?</a>
-                                <div class="articles__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</div>
-                                <div class="articles__date">11 января 2019 года</div>
-                            </div>
-                        </div>
-                        <div class="articles__item">
-                            <div class="articles__image">
-                                <img src="static/img/general/article/2.png" alt="">
-                            </div>
-
-                            <div class="articles__info">
-                                <a href="article.html" class="articles__name">Где утилизировать?</a>
-                                <div class="articles__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</div>
-                                <div class="articles__date">12 января 2019 года</div>
-                            </div>
-                        </div>
-                        <div class="articles__item">
-                            <div class="articles__image">
-                                <img src="static/img/general/article/3.png" alt="">
-                            </div>
-
-                            <div class="articles__info">
-                                <a href="article.html" class="articles__name">Виды отходов</a>
-                                <div class="articles__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</div>
-                                <div class="articles__date">16 января 2019 года</div>
-                            </div>
+                            </aside>
+                            <!-- end aside -->
                         </div>
                     </div>
+                    <!-- end main -->
 
-                    <div class="articles__more">
-                        <a href="javascript:void(0)">Показать больше <i class="fas fa-chevron-down"></i></a>
-                    </div>
                 </div>
-            </div>
+            </section>
+            <!-- page content end -->
         </div>
 
         <footer class="footer">
@@ -507,6 +558,7 @@
         </footer>
         <link href="static/css/main.min.css" rel="stylesheet" type="text/css">
 
+
         <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -514,6 +566,203 @@
         <script src="https://cdn.jsdelivr.net/npm/lightgallery/dist/js/lightgallery-all.min.js"></script>
 
         <script src="static/js/main.min.js"></script>
+        <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+        <script>
+            $(document).ready(function () {
+                ymaps.ready().then(init);
+        
+                var cityMap,
+                    bigMap = false,
+                    $body = $('body');
+        
+                function init() {
+                    MyBalloonLayout = ymaps.templateLayoutFactory.createClass(
+                        '<div class="popover top map-city__panel new-panel bg-base text-black">' +
+                        '<span class="close-map-panel text-base link-color close"><i class="icon-close"></i></span>' +
+                        '<div class="arrow"></div>' +
+                        '<div class="popover-inner panel-inner">' +
+                        '$[[options.contentLayout observeSize minWidth=100% maxWidth=100% maxHeight=350]]' +
+                        '</div>' +
+                        '</div>', {
+                            /**
+                             * Строит экземпляр макета на основе шаблона и добавляет его в родительский HTML-элемент.
+                             */
+                            build: function () {
+                                this.constructor.superclass.build.call(this);
+                                this._$element = $('.popover', this.getParentElement());
+                                this.applyElementOffset();
+                                this._$element.find('.close')
+                                    .on('click', $.proxy(this.onCloseClick, this));
+                            },
+        
+                            /**
+                             * Удаляет содержимое макета из DOM.
+                             */
+                            clear: function () {
+                                this._$element.find('.close')
+                                    .off('click');
+        
+                                this.constructor.superclass.clear.call(this);
+                            },
+        
+                            /**
+                             * Метод будет вызван системой шаблонов АПИ при изменении размеров вложенного макета.
+                             */
+                            onSublayoutSizeChange: function () {
+                                MyBalloonLayout.superclass.onSublayoutSizeChange.apply(this, arguments);
+        
+                                if (!this._isElement(this._$element)) {
+                                    return;
+                                }
+        
+                                this.applyElementOffset();
+        
+                                this.events.fire('shapechange');
+                            },
+        
+                            /**
+                             * Сдвигаем балун, чтобы "хвостик" указывал на точку привязки.
+                             */
+                            applyElementOffset: function () {
+                                this._$element.css({
+                                    left: -(this._$element[0].offsetWidth / 2),
+                                    top: -(this._$element[0].offsetHeight + this._$element.find('.arrow')[0].offsetHeight)
+                                });
+                            },
+        
+                            /**
+                             * Закрывает балун при клике на крестик, кидая событие "userclose" на макете.
+                             */
+                            onCloseClick: function (e) {
+                                e.preventDefault();
+        
+                                this.events.fire('userclose');
+                            },
+        
+                            /**
+                             * Используется для автопозиционирования (balloonAutoPan).
+                             */
+                            getShape: function () {
+                                if (!this._isElement(this._$element)) {
+                                    return MyBalloonLayout.superclass.getShape.call(this);
+                                }
+        
+                                var position = this._$element.position();
+        
+                                return new ymaps.shape.Rectangle(new ymaps.geometry.pixel.Rectangle([
+                                    [position.left, position.top], [
+                                        position.left + this._$element[0].offsetWidth,
+                                        position.top + this._$element[0].offsetHeight + this._$element.find('.arrow')[0].offsetHeight
+                                    ]
+                                ]));
+                            },
+        
+                            /**
+                             * Проверяем наличие элемента (в ИЕ и Опере его еще может не быть).
+                             */
+                            _isElement: function (element) {
+                                return element && element[0] && element.find('.arrow')[0];
+                            }
+                        }),
+        
+                        // Создание вложенного макета содержимого балуна.
+                        MyBalloonContentLayout = ymaps.templateLayoutFactory.createClass(
+                            '<div class="map-city__name h3">Городское клубное пространство <br>«Мой социальный центр»</div>'+
+                            '<div class="map-city__address"><span class="text-base address-caption address">Москва, улица Сущёвский Вал, 31с2</span></div>'+
+                            '<div class="map-city__link btn btn-default-color">События центра</div>'
+                        ),
+        
+                        cityMap = new ymaps.Map(
+                            "profile-map",
+                            {
+                                center: [55.753964, 37.585486],
+                                zoom: 14,
+                                controls: ["zoomControl"],
+                                behaviors: ["drag", "multiTouch", "dblClickZoom", "rightMouseButtonMagnifier", "scrollZoom"]
+                            }),
+        
+                        //
+                        // создаем кнопку изменения отображения карты
+                        //
+                        sizeControlLayout = ymaps.templateLayoutFactory.createClass('<span id="togglerSize" class="link-bg-color toggler-size bg-base a"><i class="icon-full-size"></i></span>', {
+                            build: function () {
+                                this.constructor.superclass.build.call(this);
+                                $('#togglerSize').bind('click', this.size);
+        
+                            },
+                            size: function () {
+                                bigMap = !bigMap;
+                                if (bigMap) {
+                                    $('.map-city-size').addClass('full-map');
+                                    $body.addClass('body-full-map').scrollTo(0);
+                                } else {
+                                    $('.map-city-size').removeClass('full-map');
+                                    $body.removeClass('body-full-map').scrollTo('.main');
+                                }
+                                // обновляем размеры карты
+                                cityMap.container.fitToViewport();
+                            },
+                        }),
+                        sizeControl = new ymaps.control.ZoomControl({options: {layout: sizeControlLayout}});
+        
+                    cityMap.controls.add(sizeControl, {
+                        float: 'none',
+                        position: {
+                            top: '20px',
+                            right: '20px',
+                        }
+                    });
+        
+                    myPlacemark = window.myPlacemark = new ymaps.Placemark([55.753964, 37.585486], {
+                        balloonHeader: '',
+                        balloonContent: ''
+                    }, {
+                        balloonShadow: false,
+                        balloonLayout: MyBalloonLayout,
+                        balloonContentLayout: MyBalloonContentLayout,
+                        balloonPanelMaxMapArea: 0,
+                        // Не скрываем иконку при открытом балуне.
+                        hideIconOnBalloonOpen: false,
+                        // И дополнительно смещаем балун, для открытия над иконкой.
+                        balloonOffset: [3, -55],
+                        iconLayout: 'default#image',
+                        // Своё изображение иконки метки.
+                        iconImageHref: 'static/img/general/map-point.png',
+                        // Размеры метки.
+                        iconImageSize: [50, 50],
+                        // Смещение левого верхнего угла иконки относительно
+                        // её "ножки" (точки привязки).
+                        iconImageOffset: [-25, -50]
+                    });
+        
+                    cityMap.geoObjects.add(myPlacemark);
+                    cityMap.behaviors.disable('scrollZoom');
+        
+        
+                    // Добавим геообъекты в коллекцию.
+                    // collection
+                    //     .add(new ymaps.Placemark([55.753964, 37.585486], {
+                    //         hideIcon: false,
+                    //         balloonContentHeader: "Балун метки",
+                    //         balloonContentBody: "Содержимое <em>балуна</em> метки",
+                    //         balloonContentFooter: "Подвал",
+                    //         hintContent: "Хинт метки",
+                    //         hideIconOnBalloonOpen: false,
+                    //         //И дополнительно смещаем балун, для открытия над иконкой.
+                    //         balloonOffset: [3, -40],
+                    //         content: {
+                    //             name: "Городское клубное пространство «Мой социальный центр»",
+                    //             address: "Москва, улица Сущёвский Вал, 31с2",
+                    //         }
+                    //     }));
+        
+        
+                    // задаем общие параметры гео-объектов
+                    // Иконки меток по умолчанию. т.е. ко всем создаваемым меткам будут применятся эти стили
+                    // перебить их можно указав стили непосредстввенно у метки
+                }
+            });
+        </script>
     </body>
 
 </html>
