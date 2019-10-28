@@ -1,0 +1,196 @@
+<script>
+    $(document).ready(function () {
+        ymaps.ready().then(init);
+
+        var cityMap,
+            bigMap = false,
+            $body = $('body');
+
+        function init() {
+            MyBalloonLayout = ymaps.templateLayoutFactory.createClass(
+                '<div class="popover top map-city__panel new-panel bg-base text-black">' +
+                '<span class="close-map-panel text-base link-color close"><i class="icon-close"></i></span>' +
+                '<div class="arrow"></div>' +
+                '<div class="popover-inner panel-inner">' +
+                '$[[options.contentLayout observeSize minWidth=100% maxWidth=100% maxHeight=350]]' +
+                '</div>' +
+                '</div>', {
+                    /**
+                     * Строит экземпляр макета на основе шаблона и добавляет его в родительский HTML-элемент.
+                     */
+                    build: function () {
+                        this.constructor.superclass.build.call(this);
+                        this._$element = $('.popover', this.getParentElement());
+                        this.applyElementOffset();
+                        this._$element.find('.close')
+                            .on('click', $.proxy(this.onCloseClick, this));
+                    },
+
+                    /**
+                     * Удаляет содержимое макета из DOM.
+                     */
+                    clear: function () {
+                        this._$element.find('.close')
+                            .off('click');
+
+                        this.constructor.superclass.clear.call(this);
+                    },
+
+                    /**
+                     * Метод будет вызван системой шаблонов АПИ при изменении размеров вложенного макета.
+                     */
+                    onSublayoutSizeChange: function () {
+                        MyBalloonLayout.superclass.onSublayoutSizeChange.apply(this, arguments);
+
+                        if (!this._isElement(this._$element)) {
+                            return;
+                        }
+
+                        this.applyElementOffset();
+
+                        this.events.fire('shapechange');
+                    },
+
+                    /**
+                     * Сдвигаем балун, чтобы "хвостик" указывал на точку привязки.
+                     */
+                    applyElementOffset: function () {
+                        this._$element.css({
+                            left: -(this._$element[0].offsetWidth / 2),
+                            top: -(this._$element[0].offsetHeight + this._$element.find('.arrow')[0].offsetHeight)
+                        });
+                    },
+
+                    /**
+                     * Закрывает балун при клике на крестик, кидая событие "userclose" на макете.
+                     */
+                    onCloseClick: function (e) {
+                        e.preventDefault();
+
+                        this.events.fire('userclose');
+                    },
+
+                    /**
+                     * Используется для автопозиционирования (balloonAutoPan).
+                     */
+                    getShape: function () {
+                        if (!this._isElement(this._$element)) {
+                            return MyBalloonLayout.superclass.getShape.call(this);
+                        }
+
+                        var position = this._$element.position();
+
+                        return new ymaps.shape.Rectangle(new ymaps.geometry.pixel.Rectangle([
+                            [position.left, position.top], [
+                                position.left + this._$element[0].offsetWidth,
+                                position.top + this._$element[0].offsetHeight + this._$element.find('.arrow')[0].offsetHeight
+                            ]
+                        ]));
+                    },
+
+                    /**
+                     * Проверяем наличие элемента (в ИЕ и Опере его еще может не быть).
+                     */
+                    _isElement: function (element) {
+                        return element && element[0] && element.find('.arrow')[0];
+                    }
+                }),
+
+                // Создание вложенного макета содержимого балуна.
+                MyBalloonContentLayout = ymaps.templateLayoutFactory.createClass(
+                    '<div class="map-city__name h3">Городское клубное пространство <br>«Мой социальный центр»</div>'+
+                    '<div class="map-city__address"><span class="text-base address-caption address">Москва, улица Сущёвский Вал, 31с2</span></div>'+
+                    '<div class="map-city__link btn btn-default-color">События центра</div>'
+                ),
+
+                cityMap = new ymaps.Map(
+                    "profile-map",
+                    {
+                        center: [55.753964, 37.585486],
+                        zoom: 14,
+                        controls: ["zoomControl"],
+                        behaviors: ["drag", "multiTouch", "dblClickZoom", "rightMouseButtonMagnifier", "scrollZoom"]
+                    }),
+
+                //
+                // создаем кнопку изменения отображения карты
+                //
+                sizeControlLayout = ymaps.templateLayoutFactory.createClass('<span id="togglerSize" class="link-bg-color toggler-size bg-base a"><i class="icon-full-size"></i></span>', {
+                    build: function () {
+                        this.constructor.superclass.build.call(this);
+                        $('#togglerSize').bind('click', this.size);
+
+                    },
+                    size: function () {
+                        bigMap = !bigMap;
+                        if (bigMap) {
+                            $('.map-city-size').addClass('full-map');
+                            $body.addClass('body-full-map').scrollTo(0);
+                        } else {
+                            $('.map-city-size').removeClass('full-map');
+                            $body.removeClass('body-full-map').scrollTo('.main');
+                        }
+                        // обновляем размеры карты
+                        cityMap.container.fitToViewport();
+                    },
+                }),
+                sizeControl = new ymaps.control.ZoomControl({options: {layout: sizeControlLayout}});
+
+            cityMap.controls.add(sizeControl, {
+                float: 'none',
+                position: {
+                    top: '20px',
+                    right: '20px',
+                }
+            });
+
+            myPlacemark = window.myPlacemark = new ymaps.Placemark([55.753964, 37.585486], {
+                balloonHeader: '',
+                balloonContent: ''
+            }, {
+                balloonShadow: false,
+                balloonLayout: MyBalloonLayout,
+                balloonContentLayout: MyBalloonContentLayout,
+                balloonPanelMaxMapArea: 0,
+                // Не скрываем иконку при открытом балуне.
+                hideIconOnBalloonOpen: false,
+                // И дополнительно смещаем балун, для открытия над иконкой.
+                balloonOffset: [3, -55],
+                iconLayout: 'default#image',
+                // Своё изображение иконки метки.
+                iconImageHref: 'static/img/general/map-point.png',
+                // Размеры метки.
+                iconImageSize: [50, 50],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [-25, -50]
+            });
+
+            cityMap.geoObjects.add(myPlacemark);
+            cityMap.behaviors.disable('scrollZoom');
+
+
+            // Добавим геообъекты в коллекцию.
+            // collection
+            //     .add(new ymaps.Placemark([55.753964, 37.585486], {
+            //         hideIcon: false,
+            //         balloonContentHeader: "Балун метки",
+            //         balloonContentBody: "Содержимое <em>балуна</em> метки",
+            //         balloonContentFooter: "Подвал",
+            //         hintContent: "Хинт метки",
+            //         hideIconOnBalloonOpen: false,
+            //         //И дополнительно смещаем балун, для открытия над иконкой.
+            //         balloonOffset: [3, -40],
+            //         content: {
+            //             name: "Городское клубное пространство «Мой социальный центр»",
+            //             address: "Москва, улица Сущёвский Вал, 31с2",
+            //         }
+            //     }));
+
+
+            // задаем общие параметры гео-объектов
+            // Иконки меток по умолчанию. т.е. ко всем создаваемым меткам будут применятся эти стили
+            // перебить их можно указав стили непосредстввенно у метки
+        }
+    });
+</script>
