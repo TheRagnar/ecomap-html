@@ -508,7 +508,10 @@ h6, .h6 {
     line-height: 1.4;
     margin-bottom: 10px;
 }
-
+.page__title {
+    margin-bottom: 0px;
+    padding: 0 0 30px 0;
+}
 p {
     font-size: 18px;
     font-family: 'Source Sans Pro', sans-serif;;

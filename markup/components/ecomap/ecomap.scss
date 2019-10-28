@@ -1,8 +1,41 @@
 .container {
     position: relative;
 }
-
-
+.ecomap__header {
+    border-bottom: 1px solid $palette-gray5;
+    margin-bottom: 40px;
+}
+.ecomap__tabs {
+    position: absolute;
+    top: 18px;
+    right: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    margin: 0;
+    li {
+        font-size: 16px;
+        font-weight: 700;
+        padding: 0 0 33px 0;
+        border-bottom: 2px solid transparent;
+        cursor: pointer;
+        margin: 0 20px;
+    }
+    li.active {
+        color: $palette-secondary;
+        border-bottom: 2px solid $palette-secondary;
+    }
+    li:last-child {
+        margin-right: 0;
+    }
+}
+.ecomap__content {
+  display: none;
+}
+.ecomap__content.active {
+  display: block;
+}
 /**FILTER + ecoproblem btn*/
 .map-filter {
     position: relative;
@@ -483,7 +516,7 @@
     .wrap-pagination {
         margin: 0;
     }
-    .grey-btn-2 {
+    .gray-btn-2 {
         max-width: 384px;
         border-color: $palette-gray5;
         &:hover, &[data-hover="true"] {

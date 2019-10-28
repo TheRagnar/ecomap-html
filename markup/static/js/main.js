@@ -127,12 +127,27 @@ import '../../components/content-page/content';
 
       });
 
-      //
-      // var btnMore = document.querySelector(".more");
-      // btnMore.onclick = function() {
-      //    document.querySelector(".search-form__sections").classList.toggle('open');
-      //     return false;
-      // };
+      $('.ecomap__tabs').on('click', 'li:not(.active)', function() {
+
+
+
+
+
+        $(this)
+          .addClass('active').siblings().removeClass('active')
+          .closest('div.ecomap').find('.ecomap__content').removeClass('active').eq($(this).index()).addClass('active');
+
+
+
+      });
+
+
+
+      var btnMore = document.querySelector(".more");
+      btnMore.onclick = function() {
+         document.querySelector(".search-form__sections").classList.toggle('open');
+          return false;
+      };
 
 
 
