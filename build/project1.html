@@ -9,8 +9,13 @@
         <meta content="telephone=no" name="format-detection">
         <meta name="HandheldFriendly" content="true">
         <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link href="static/fonts/icomoon/style.css" rel="stylesheet" type="text/css">
+        <link href="static/css/separate-css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery/dist/css/lightgallery.min.css" />
 
 
     </head>
@@ -348,23 +353,23 @@
                                 </div>
                                 <div class="media__slider">
                                     <div class="project-slider-1 slider-1-for">
-                                        <div class="slider-1-for__slide">
+                                        <a href="video-file" class="slider-1-for__slide">
                                             <div class="prev-img" style="background-image: url('static/img/general/project/slide1.jpg');">
                                                 <span class="icon-video"></span>
                                             </div>
-                                        </div>
-                                        <div class="slider-1-for__slide">
+                                        </a>
+                                        <a href="/static/img/general/project/slide2.jpg" class="slider-1-for__slide">
                                             <img src="/static/img/general/project/slide2.jpg" alt="">
-                                        </div>
-                                        <div class="slider-1-for__slide">
+                                        </a>
+                                        <a href="/static/img/general/project/slide3.jpg" class="slider-1-for__slide">
                                             <img src="/static/img/general/project/slide3.jpg" alt="">
-                                        </div>
-                                        <div class="slider-1-for__slide">
+                                        </a>
+                                        <a href="/static/img/general/project/slide4.jpg" class="slider-1-for__slide">
                                             <img src="/static/img/general/project/slide4.jpg" alt="">
-                                        </div>
-                                        <div class="slider-1-for__slide">
+                                        </a>
+                                        <a href="/static/img/general/project/slide3.jpg" class="slider-1-for__slide">
                                             <img src="/static/img/general/project/slide3.jpg" alt="">
-                                        </div>
+                                        </a>
                                     </div>
                                     <div class="project-slider-1-nav">
                                         <div class="arrows slider-1-nav__arrows">
@@ -373,33 +378,33 @@
                                         </div>
                                         <div class="slider-1-nav">
                                             <div class="slider-1-nav__slide">
-                                                <div class="slide-img">
+                                                <a href="video-file" class="slide-img">
                                                     <div class="prev-img" style="background-image: url('static/img/general/project/slide1.jpg');">
                                                         <span class="icon-video"></span>
                                                     </div>
-                                                </div>
+                                                </a>
                                             </div>
                                             <div class="slider-1-nav__slide">
-                                                <div class="slide-img">
+                                                <a href="/static/img/general/project/slide2.jpg" class="slide-img">
                                                     <img src="/static/img/general/project/slide2.jpg" alt="">
-                                                </div>
+                                                </a>
                                             </div>
                                             <div class="slider-1-nav__slide">
-                                                <div class="slide-img">
+                                                <a href="/static/img/general/project/slide3.jpg" class="slide-img">
                                                     <img src="/static/img/general/project/slide3.jpg" alt="">
-                                                </div>
+                                                </a>
 
                                             </div>
                                             <div class="slider-1-nav__slide">
-                                                <div class="slide-img">
-                                                    <img src="/static/img/general/project/slide4.jpg" alt="">
-                                                </div>
+                                                <a href="./static/img/general/project/slide4.jpg" class="slide-img">
+                                                    <img src="./static/img/general/project/slide4.jpg" alt="">
+                                                </a>
 
                                             </div>
                                             <div class="slider-1-nav__slide">
-                                                <div class="slide-img">
-                                                    <img src="/static/img/general/project/slide3.jpg" alt="">
-                                                </div>
+                                                <a href="./static/img/general/project/slide3.jpg" class="slide-img">
+                                                    <img src="./static/img/general/project/slide3.jpg" alt="">
+                                                </a>
 
                                             </div>
                                         </div>
@@ -438,19 +443,20 @@
 
 
                             <div class="sidebar__buttons-top">
-                                <a href="#" target="_blank" onclick="window.print()" class=" btn grey-btn">
-                                    <i class="icon-print"></i><span>Печать</span>
+                                <a href="#" target="_blank" onclick="window.print()" class="btn grey-btn print-btn">
+                                    <i class="icon-print"></i>
+                                    <span>Печать</span>
                                 </a>
-                                <div class="wrap-popover-sharp dropdown">
-                                    <button type="button" class="btn grey-btn" data-toggle="dropdown" data-animation="200">
+                                <div class="dropdown">
+                                    <button type="button" class="btn grey-btn share-btn">
                                         <i class="icon-share"></i><span>Поделиться</span>
                                     </button>
                                     <script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
                                     <script src="https://yastatic.net/share2/share.js"></script>
-                                    <div class="dropdown-menu popover-sharp" id="popoverSharp">
+                                    <div class="dropdown-menu">
                                         <div class="popover-body popover-sharp-list">
                                             <span class="close"><i class="icon-close"></i></span>
-                                            <div class="ya-share2" data-description="Городской ландшафтный парк культуры и отдыха имени А.С. Пушкина" data-image="http://dtszn.dev-vps.ru/icon/logo-social.png" data-services="vkontakte,facebook,odnoklassniki,twitter"></div>
+                                            <div class="ya-share2" data-description="Городской ландшафтный парк культуры и отдыха имени А.С. Пушкина" data-image="http://n.dev-vps.ru/icon/logo-social.png" data-services="vkontakte,facebook,odnoklassniki,twitter"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -586,12 +592,11 @@
         </footer>
         <link href="static/css/main.min.css" rel="stylesheet" type="text/css">
 
-
         <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-
+        <script src="https://cdn.jsdelivr.net/npm/lightgallery/dist/js/lightgallery-all.min.js"></script>
 
         <script src="static/js/main.min.js"></script>
 

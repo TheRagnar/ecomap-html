@@ -22,10 +22,17 @@ import '../../components/content-page/content';
              share: false,
              thumbnail: true
         });
-    }
+    },
 
-    $('.slider-1-nav__slide a').lightGallery();
-    $('.slider-1-for__slide').lightGallery();
+    $('.media__slider').lightGallery({
+         selector: 'a'
+         // download: false,
+         // fullScreen: false,
+         // zoom: false,
+         // share: false,
+         // thumbnail: true
+    });
+
 
  // jQuery(function ($) {
 
@@ -34,6 +41,7 @@ import '../../components/content-page/content';
          slidesToScroll: 1,
          arrows: false,
          fade: true,
+         infinite: false,
          asNavFor: '.slider-1-nav'
      });
      $('.slider-1-nav').slick({
@@ -45,10 +53,35 @@ import '../../components/content-page/content';
          // arrows: true,
          nextArrow: ".slider-1-nav__arrow-next",
          prevArrow: ".slider-1-nav__arrow-prev",
-         // centerMode: true,
-         focusOnSelect: true
+         centerMode: false,
+         focusOnSelect: true,
+         variableWidth: true,
+         responsive: [
+             {
+                 breakpoint: 1366,
+                 settings: {
+                     centerMode: true,
+                     slidesToShow: 3,
+                     slidesToScroll: 1,
+                 }
+             }
+         ]
      });
 
+
+        var shareBtn = '.share-btn',
+            shareMenu = '.dropdown-menu',
+            shareClose = '.close';
+
+        $(shareBtn).on('click', function(){
+            // e.preventDefault();
+            $(this).toggleClass('open');
+            $(this).parent().find(shareMenu).toggleClass('active');
+        });
+        $(shareClose).on('click', function(){
+            $(this).parents().find(shareMenu).removeClass('active');
+            $(this).parents().find(shareBtn).removeClass('open');
+        });
 
 
 
@@ -94,7 +127,12 @@ import '../../components/content-page/content';
 
       });
 
-
+      //
+      // var btnMore = document.querySelector(".more");
+      // btnMore.onclick = function() {
+      //    document.querySelector(".search-form__sections").classList.toggle('open');
+      //     return false;
+      // };
 
 
 

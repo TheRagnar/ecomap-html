@@ -269,3 +269,248 @@
         background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
     }
 }
+
+
+/*ecomap2*/
+.objects {
+    display: flex;
+    flex-flow: row wrap;
+}
+.search-form__inputs {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.obj-item__label {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  padding: 5px 10px;
+  align-self: flex-start;
+  margin-bottom: 32px;
+}
+.obj-item_message {
+    color: $white-color;
+    .obj-item__name {
+      font-size: 28px;
+      // font-family: "GOSTUI2";
+      font-weight: bold;
+    }
+}
+
+
+.obj-item {
+    background-color: $white-color;
+    border-radius: 4px;
+    overflow: hidden;
+    width: 384px;
+    min-height: 542px;
+    margin-right: 31px;
+    margin-bottom: 31px;
+    display: flex;
+    flex-flow: column nowrap;
+
+    &__img {
+        height: 240px;
+        overflow: hidden;
+        flex: 0 0 auto;
+        cursor: pointer;
+    }
+    &__name {
+        margin-bottom: 20px;
+        line-height: 1.25;
+        cursor: pointer;
+        transition: all 0.2s;
+        &:hover {
+            color: $palette-secondary;
+        }
+    }
+    &__info {
+        flex: 1 0 auto;
+        padding: 30px 35px 35px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+    }
+    &__sections {
+        flex: 1;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+    .label {
+        color: $palette-gray2;
+    }
+    .text {
+        margin-bottom: 10px;
+        line-height: 1.15;
+    }
+    .base-btn:hover {
+        background: $palette-secondary;
+        border-color: $palette-secondary;
+    }
+}
+@media screen and (max-width: 991px){
+    .obj-item {
+        margin-right: 0;
+        width: 100%;
+    }
+    .obj-item__img {
+        height: 300px;
+        img {
+            width: 100%;
+        }
+    }
+}
+@media screen and (min-width: 1367px){
+    .obj-item:nth-child(3n) {
+        margin-right: 0;
+    }
+}
+.search-form__search-box {
+    position: relative;
+    margin-right: 32px;
+    flex: 1;
+
+}
+.search-form__select {
+    width: 384px;
+}
+.search-form__sections {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    height: 40px;
+    overflow: hidden;
+    .btn {
+        color: $palette-main;
+        margin: 0 12px 12px 0;
+    }
+    .btn:hover {
+        color: $white-color;
+    }
+    .more {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 28px;
+        padding: 6px 14px;
+        span {
+            display: block;
+            position: relative;
+            width: 4px;
+            height: 4px;
+            margin-right: 3px;
+            &::before {
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 0;
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+                background: #000000;
+            }
+        }
+        span:last-child {
+            margin: 0;
+        }
+    }
+}
+.search-form__sections.open {
+  height: auto;
+}
+
+@media screen and (max-width: 1366px){
+    .search-form__sections {
+        height: 80px;
+    }
+}
+
+
+
+.search-form__inputs {
+    .select2-container .select2-selection--single {
+        border: 1px solid transparent !important;
+    }
+    .select2-container.select2-container--focus .select2-selection--single {
+        border: 1px solid #d0d4dd !important;
+    }
+    .form-group__input {
+        border: 1px solid transparent;
+    }
+    .form-group__input:focus {
+        border-color: #18b4bb;
+    }
+}
+
+
+.obj-item_message {
+    background: $palette-secondary url(../img/general/phonehand.svg) no-repeat;
+    background-size: 85%;
+    background-position: center bottom -25px;
+
+    .obj-item__name:hover {
+        color: #ffffff;
+    }
+
+}
+.obj-item_message .obj-item__info {
+    padding: 35px 40px 60px;
+}
+@media screen and (max-width: 991px){
+    .obj-item_message {
+        background: $palette-secondary url(../img/general/phonehand.svg) no-repeat;
+        background-size: 45%;
+        background-position: center bottom -25px;
+    }
+}
+.obj-item__name {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.ecomap-list__footer {
+    display: flex;
+    flex-flow: row  wrap;
+    justify-content: space-between;
+    margin: 60px 0 100px;
+    .wrap-pagination {
+        margin: 0;
+    }
+    .grey-btn-2 {
+        max-width: 384px;
+        border-color: $palette-gray5;
+        &:hover, &[data-hover="true"] {
+            background: transparent;
+            color: $palette-main;
+            border-color:  $palette-secondary;
+        }
+
+        &:focus, &[data-focus="true"] {
+            background: transparent;
+            color: $palette-main;
+            border-color:  $palette-gray5;
+        }
+
+        &[aria-disabled="disabled"], .disabled {
+            opacity: 0.5;
+
+            &:hover, &:focus {
+                color: $palette-main;
+                background: transparent;
+                border-color: $palette-gray5;
+            }
+        }
+    }
+}
+@media screen and (max-width: 991px){
+    .ecomap-list__footer .wrap-pagination {
+        margin: 0 0 20px 0;
+    }
+}
