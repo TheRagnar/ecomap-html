@@ -22,9 +22,42 @@ $CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: "GOSTUI2", 'Roboto',
+    sans-serif;
 }
 
+
+@font-face {
+    font-family: 'GOSTUI2';
+    src: url('../fonts/windows/GOSTUI2-Bold.eot?#iefix');
+    src: url('../fonts/windows/GOSTUI2-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/windows/GOSTUI2-Bold.ttf?#iefix') format('truetype'),
+        url('../fonts/windows/GOSTUI2-Bold.woff?#iefix') format('woff'),
+        url('../fonts/windows/GOSTUI2-Bold.svg?#iefix') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GOSTUI2';
+    src: url('../fonts/windows/GOSTUI2-Medium.eot?#iefix');
+    src: url('../fonts/windows/GOSTUI2-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/windows/GOSTUI2-Medium.ttf?#iefix') format('truetype'),
+        url('../fonts/windows/GOSTUI2-Medium.woff?#iefix') format('woff'),
+        url('../fonts/windows/GOSTUI2-Medium.svg?#iefix') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GOSTUI2';
+    src: url('../fonts/windows/GOSTUI2.eot?#iefix');
+    src: url('../fonts/windows/GOSTUI2.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/windows/GOSTUI2.ttf?#iefix') format('truetype'),
+        url('../fonts/windows/GOSTUI2.woff?#iefix') format('woff'),
+        url('../fonts/windows/GOSTUI2.svg?#iefix') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
 
 
 // @font-face {

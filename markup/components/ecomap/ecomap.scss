@@ -16,6 +16,7 @@
     margin: 0;
     li {
         font-size: 16px;
+        font-family: "GOSTUI2";
         font-weight: 700;
         padding: 0 0 33px 0;
         border-bottom: 2px solid transparent;
@@ -193,7 +194,16 @@
         background: url('../img/general/alert-line.png') no-repeat;
     }
 }
-
+@media screen and (max-width: 991px) {
+    .report-ecoproblem {
+        width: 58px;
+        padding: 0px 20px 3px 20px;
+        text-indent: -9999px;
+        &::before {
+            left: 18px;
+        }
+    }
+}
 /**OBJECT INFO*/
 
 .map-obj {
@@ -547,3 +557,4 @@
         margin: 0 0 20px 0;
     }
 }
+
