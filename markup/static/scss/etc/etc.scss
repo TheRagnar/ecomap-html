@@ -4,3 +4,10 @@
 .attached-file {
     color: #848e99;
 }
+
+
+/*временные стили    COLUMN  перекрывает контент на мобильном! */
+.header .header-mobile .menu__items {
+    flex-direction: row;
+}
+/*временные стили end*/

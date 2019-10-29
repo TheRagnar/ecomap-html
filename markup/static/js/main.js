@@ -64,7 +64,15 @@ import '../../components/content-page/content';
                      slidesToShow: 3,
                      slidesToScroll: 1,
                  }
-             }
+             },
+            {
+                breakpoint: 991,
+                settings: {
+                    centerMode: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }
          ]
      });
 
