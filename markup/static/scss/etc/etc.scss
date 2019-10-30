@@ -11,3 +11,34 @@
     flex-direction: row;
 }
 /*временные стили end*/
+
+
+
+
+
+
+.prof-info__mail {
+    word-wrap: anywhere;
+}
+
+.getback-btn {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: $palette-gray2;
+    position: relative;
+    padding-left: 30px;
+    &::before {
+        position: absolute;
+        content: '';
+        top: 4px;
+        left: 0;
+            height: 12px;
+            width: 10px;
+            background: url('/static/img/minified-svg/arrow-prev.svg') no-repeat;
+            opacity: 0.5;
+    }
+    &:hover {
+        color: $palette-gray2;
+        text-decoration: none;
+    }
+}
