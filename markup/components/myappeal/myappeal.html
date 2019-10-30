@@ -1,0 +1,59 @@
+
+
+
+<div class="breadcrumbs">
+    <div class="container">
+        <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+                <a href="#" class="breadcrumbs__link">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+                <a href="#" class="breadcrumbs__link">Личный кабинет </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="myappeal">
+    <div class="container">
+        <!-- main -->
+        <div class="row">
+            <div class="col-md-8 col-12">
+
+                <div class="myappeal__header">
+                    <h1 class="page__title">Мои обращения</h1>
+                    <ul class="page__tabs myappeal__tabs">
+                        <li class="page__tab1 myappeal__tab1 active">Активные</li>
+                        <li class="page__tab2 myappeal__tab2">Архив</li>
+                    </ul>
+                </div>
+
+
+                <div class="page__tab-content myappeal__content appl-cont myappeal__active-list active">
+                    {{> myappeal/myappeal1 }}
+                </div>
+                <div class="page__tab-content myappeal__content appl-cont myappeal__archive-list">
+                    {{> myappeal/myappeal2 }}
+ 
+                </div>
+            </div>
+
+
+            <div class="col-md-4 col-12">
+                <!-- aside -->
+                <aside class="aside text-base">
+                    {{> aside/profile-info }}
+                    {{> aside/profile-menu }}
+
+                    <button class="btn gray-btn">Выйти</button>
+                </aside>
+                <!-- end aside -->
+            </div>
+        </div>
+        <!-- end main -->
+
+
+    </div>
+</div>
+    

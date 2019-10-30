@@ -1,0 +1,36 @@
+.gallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    &__item {
+        flex: 0 0 auto;
+        width: 230px;
+        height: 140px;
+        border-radius: 4px;
+        margin: 0 20px 35px 0;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            top: 50%;
+            left: 50%;
+            transform: translate3d(-50%, -50%, 0);
+            width: 36px;
+            height: 36px;
+            background: url('/static/img/minified-svg/search-plus.svg') no-repeat;
+            z-index: 2;
+        }
+
+        img {
+            z-index: 1;
+        }
+    }
+}
+.gallery__item:nth-child(3n) {
+    margin-right: 0;
+}

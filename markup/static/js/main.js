@@ -26,14 +26,10 @@ import '../../components/content-page/content';
 
     $('.media__slider').lightGallery({
          selector: 'a'
-         // download: false,
-         // fullScreen: false,
-         // zoom: false,
-         // share: false,
-         // thumbnail: true
     });
-
-
+    $('.gallery').lightGallery({
+        selector: 'a'
+    });
  // jQuery(function ($) {
 
      $('.slider-1-for').slick({
@@ -135,30 +131,46 @@ import '../../components/content-page/content';
 
       });
 
-      $('.ecomap__tabs').on('click', 'li:not(.active)', function() {
 
-
-
-
-
+      $('.page__tabs').on('click', 'li:not(.active)', function () {
         $(this)
           .addClass('active').siblings().removeClass('active')
-          .closest('div.ecomap').find('.ecomap__content').removeClass('active').eq($(this).index()).addClass('active');
-
-
+          .closest('div.col-md-8').find('.page__tab-content').removeClass('active').eq($(this).index()).addClass('active');
 
       });
 
+     $('.ecomap__tabs').on('click', 'li:not(.active)', function () {
+         $(this)
+             .addClass('active').siblings().removeClass('active')
+             .closest('div.ecomap').find('.ecomap__content').removeClass('active').eq($(this).index()).addClass('active');
+
+     });
 
 
-      var btnMore = document.querySelector(".more");
-      btnMore.onclick = function() {
-         document.querySelector(".search-form__sections").classList.toggle('open');
-          return false;
-      };
+ 
 
+        $('.app-item-ans__score .star').hover(function () {
+            $(this).addClass('hover-active');
+            $(this).parent().find('.star:lt(' + $(this).index() +
+                ')').addClass('hover-active');
+            $(this).parent().find('.star:gt(' + $(this).index() +
+                ')').addClass('no-hover-active');
+        }).mouseout(function () {
+            $(this).parent().find('.star').removeClass('hover-active');
+            $(this).parent().find('.star:gt(' + $(this).index() +
+                ')').removeClass('no-hover-active');
+        }).click(function () {
+            $(this).removeClass('hover-active').addClass('active');
+            $(this).parent().find('.star:lt(' + $(this).index() +
+                ')').removeClass('hover-active').addClass('active');
+            $(this).parent().find('.star:gt(' + $(this).index() +
+                ')').removeClass('no-hover-active').removeClass('active');
+        });
 
-
-
+     var btnMore = document.querySelector(".more");
+     btnMore.onclick = function() {
+        document.querySelector(".search-form__sections").classList.toggle('open');
+         return false;
+     };
 
  // }(jQuery));

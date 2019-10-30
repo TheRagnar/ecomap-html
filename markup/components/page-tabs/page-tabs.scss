@@ -1,0 +1,37 @@
+.page__tab-content {
+    display: none;
+}
+
+.page__tab-content.active {
+    display: block;
+}
+
+.page__tabs {
+    position: absolute;
+    bottom: 0px;
+    right: 15px;
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    margin: 0;
+
+    li {
+        font-size: 16px;
+        font-family: "GOSTUI2";
+        font-weight: 700;
+        padding: 0 0 33px 0;
+        border-bottom: 2px solid transparent;
+        cursor: pointer;
+        margin: 0 20px;
+    }
+
+    li.active {
+        color: $palette-secondary;
+        border-bottom: 2px solid $palette-secondary;
+    }
+
+    li:last-child {
+        margin-right: 0;
+    }
+}
