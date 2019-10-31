@@ -1,0 +1,67 @@
+<div class="breadcrumbs">
+    <div class="container">
+        <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+                <a href="#" class="breadcrumbs__link">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+                <a href="#" class="breadcrumbs__link">Обращения граждан </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="myappeal-stats project">
+    <div class="container">
+        <div class="project__wrap">
+            <div class="project__content">
+                <div class="myappeal__header">
+                    <h1 class="page__title">Статистика обращений</h1>
+                    <ul class="page__tabs myappeal__tabs">
+                        <li class="page__tab1 myappeal__tab1 active">2019</li>
+                        <li class="page__tab2 myappeal__tab2">2018</li>
+                    </ul>
+                </div>
+                <div class="page__tab-content active">
+                    {{> myappeal/myappeal-stats1 }}
+                    <div class="myappeal-stats__footer">
+                        <a href="#" class="btn gray-btn-2">Все обращения</a>
+                    </div>
+                </div>
+                <div class="page__tab-content">
+                    2018
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <div class="sidebar__buttons-top">
+                    <a href="#" target="_blank" onclick="window.print()" class=" btn gray-btn print-btn">
+                        <i class="icon-print"></i><span>Печать</span>
+                    </a>
+                    <div class="wrap-popover-sharp dropdown">
+                        <button type="button" class="btn gray-btn share-btn" data-toggle="dropdown"
+                            data-animation="200">
+                            <i class="icon-share"></i><span>Поделиться</span>
+                        </button>
+                        <script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+                        <script src="https://yastatic.net/share2/share.js"></script>
+                        <div class="dropdown-menu">
+                            <div class="popover-body popover-sharp-list">
+                                <span class="close"><i class="icon-close"></i></span>
+                                <div class="ya-share2"
+                                    data-description="Городской ландшафтный парк культуры и отдыха имени А.С. Пушкина"
+                                    data-image="http://n.dev-vps.ru/icon/logo-social.png"
+                                    data-services="vkontakte,facebook,odnoklassniki,twitter"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="aside text-base">
+                      {{> aside/sidebar-menu1 }}
+                </aside>
+
+            </div>
+        </div>
+    </div>
+</div>

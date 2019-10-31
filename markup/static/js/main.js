@@ -132,19 +132,28 @@ import '../../components/content-page/content';
       });
 
 
-      $('.page__tabs').on('click', 'li:not(.active)', function () {
-        $(this)
-          .addClass('active').siblings().removeClass('active')
-          .closest('div.col-md-8').find('.page__tab-content').removeClass('active').eq($(this).index()).addClass('active');
 
-      });
+        $('.page__tabs').on('click', 'li:not(.active)', function () {
+            $(this)
+            .addClass('active').siblings().removeClass('active')
+            .closest('div.project__content').find('.page__tab-content')
+            .removeClass('active').eq($(this).index()).addClass('active');
+        });
 
-     $('.ecomap__tabs').on('click', 'li:not(.active)', function () {
-         $(this)
-             .addClass('active').siblings().removeClass('active')
-             .closest('div.ecomap').find('.ecomap__content').removeClass('active').eq($(this).index()).addClass('active');
+        $('.page__tabs').on('click', 'li:not(.active)', function () {
+            $(this)
+            .addClass('active').siblings().removeClass('active')
+            .closest('div.col-md-8').find('.page__tab-content')
+            .removeClass('active').eq($(this).index()).addClass('active');
+        });
 
-     });
+        $('.ecomap__tabs').on('click', 'li:not(.active)', function () {
+            $(this)
+            .addClass('active').siblings().removeClass('active')
+            .closest('div.ecomap').find('.ecomap__content')
+            .removeClass('active').eq($(this).index()).addClass('active');
+
+        });
 
 
  
@@ -166,6 +175,27 @@ import '../../components/content-page/content';
             $(this).parent().find('.star:gt(' + $(this).index() +
                 ')').removeClass('no-hover-active').removeClass('active');
         });
+
+
+
+        $('.counter__num').each(function (index,el) {
+            // e.preventDefault();
+            if ($(this).text() < 11 ) {
+                $(this).removeClass('green lightgreen turquoise').addClass('orange');
+            }
+            if ($(this).text() > 10 && $(this).text() < 31) {
+                $(this).removeClass('orange lightgreen turquoise').addClass('green');
+            }
+            if ($(this).text() > 30 && $(this).text() < 41) {
+                $(this).removeClass('green orange turquoise').addClass('lightgreen');
+            }
+            if ($(this).text() > 40 ) {
+                $(this).removeClass('green lightgreen orange').addClass('turquoise');
+            }
+            // return false;
+        });
+
+
 
      var btnMore = document.querySelector(".more");
      btnMore.onclick = function() {

@@ -1,3 +1,11 @@
+.breadcrumbs__item:last-child {
+    opacity: 0.6;
+    &::after {
+        display: none;
+    }
+}
+
+
 .sections-links {
     margin-bottom: 30px;
 }
@@ -11,9 +19,6 @@
     flex-direction: row;
 }
 /*временные стили end*/
-
-
-
 
 
 
