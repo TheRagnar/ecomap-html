@@ -96,22 +96,6 @@
         margin-bottom: 20px;
         .status-info {
             position: relative;
-            margin-left: 11px;
-            background-color: $palette-gray;
-            border-radius: 15px;
-            font-weight: 500;
-            padding: 5px 20px 5px 30px;
-            &::before {
-                position: absolute;
-                content: '';
-                top: 50%;
-                left: 11px;
-                width: 10px;
-                height: 10px;
-                border-radius: 50%;
-                background-color: transparent;
-                transform: translate3d(0, -50%, 0);
-            }
         }
     }
     &__date {
@@ -132,14 +116,39 @@
     }
 
 }
-.appeal-item.inwork {
+
+.status-info {
+    margin-left: 11px;
+    background-color: $palette-gray;
+    border-radius: 15px;
+    font-weight: 500;
+    padding: 5px 20px 5px 30px;
+
+    &::before {
+        position: absolute;
+        content: '';
+        top: 50%;
+        left: 11px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: transparent;
+        transform: translate3d(0, -50%, 0);
+    }
+}
+
+
+
+.appeal-item.inwork,
+.obj-item.inwork {
     .status-info {
         &::before {
             background-color: $orange-color2;
         }
     }
 }
-.appeal-item.new {
+.appeal-item.new,
+.obj-item.new {
     .status-info {
         &::before {
             background-color: $palette-secondary;
@@ -147,7 +156,8 @@
     }
 }
 /*решено*/
-.appeal-item.decided {
+.appeal-item.decided,
+.obj-item.decided {
     .status-info {
         &::before {
             background-color: $green-color;
@@ -155,7 +165,8 @@
     }
 }
 /*получено*/
-.appeal-item.received {
+.appeal-item.received,
+.obj-item.decided {
     .status-info {
         &::before {
             background-color: $blue-color2;
@@ -163,14 +174,16 @@
     }
 }
 /*подтверждено*/
-.appeal-item.confirmed {
+.appeal-item.confirmed,
+.obj-item.confirmed {
     .status-info {
         &::before {
             background-color: $green-color2;
         }
     }
 }
-.appeal-item.closed {
+.appeal-item.closed,
+.obj-item.closed {
     .status-info {
         &::before {
             background-color: $palette-primary;
@@ -332,3 +345,92 @@
         margin-bottom: 25px;
     }
 }
+
+
+
+/* STATS */
+
+.myappeal-stats {
+    h2 {
+        font-size: 24px;
+    }
+    .sidebar__buttons-top {
+        margin-bottom: 42px;
+    }
+    .page__tabs {
+        position: relative;
+        bottom: auto;
+        right: auto;
+        justify-content: flex-start;
+        padding: 0;
+        li {
+            margin: 0 20px 0 0;
+        }
+    }
+    .gray-btn-2 {
+        max-width: 384px;
+    }
+    .obj-item {
+        position: relative;
+        .status-info {
+            position: absolute;
+            content: '';
+            top: 10px;
+            right: 10px;
+            opacity: 0.8;
+        }
+    }
+
+}
+.myappeal-stats__footer {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+@media screen and  (min-width: 1367px){
+    .myappeal-stats .obj-item:nth-child(3n) {
+        margin-right: 31px;
+    }
+    .myappeal-stats .obj-item:nth-child(2n) {
+        margin-right: 0px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .myappeal-stats.project {
+        .sidebar {
+            display: block;
+            margin-top: 40px;
+        }
+        .sidebar__buttons-top {
+            display: none;
+        }
+        .project__wrap {
+            flex-flow: column;
+        }
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .myappeal-stats .obj-item {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .myappeal-stats .obj-item__img {
+        height: 300px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+}
+
+.myappeal__map {
+    max-width: 800px;
+    max-height: 380px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
