@@ -10,6 +10,10 @@ import '../../components/content-page/content';
 
     // проставляем title у ссылок изображений
     // инициализируем (подключаем) либу фотогалереи
+
+(function ($) {
+    $(document).ready(function () {
+
     window.lightGallery = function(block, a) {
         $(block).find(a).each(function() {
             $(this).attr('data-sub-html', $(this).find('img').attr('title'));
@@ -202,5 +206,13 @@ import '../../components/content-page/content';
         document.querySelector(".search-form__sections").classList.toggle('open');
          return false;
      };
+
+
+
+    });
+
+
+})(jQuery);
+
 
  // }(jQuery));
