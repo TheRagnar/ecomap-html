@@ -18,6 +18,7 @@
     }
     &__left{
         width: 410px;
+        flex: 1;
     }
     &__descript{
         line-height: 26px;
@@ -44,6 +45,11 @@
         img{
             fill: #818795;
             margin-right: 15px;
+            position: absolute;
+            content: '';
+            top: 50%;
+            left: 0;
+            transform: translate3d(0, -50%, 0);
         }
         &:hover{
             color: #818795;
@@ -98,11 +104,26 @@
     &__container &__link{
         font-size: 13px;
         line-height: 16px;
-        margin-bottom: 0;
+        position: relative;
+        padding-left: 40px;
     }
     &__copyr{
         font-size: 13px;
         line-height: 16px;
         color: #fff;
+    }
+}
+
+.footer__link svg.icon__outline-mail {
+    left: -2px;
+}
+
+.footer__link.footer__link_2 {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    flex: 1;
+    a {
+        color: #848e99;
     }
 }

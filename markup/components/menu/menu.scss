@@ -18,6 +18,7 @@
         background-color: #fff;
         right: -12px;
         display: none;
+        z-index: 100;
         &:after{
             position: absolute;
             content: '';

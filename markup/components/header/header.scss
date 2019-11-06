@@ -180,3 +180,17 @@
         }
     }
 }
+
+
+.topbar-user .topbar__top {
+    a {
+        color: #a9abb1;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+    }
+    a:hover {
+        color: #ffffff;
+        text-decoration: none;
+    }
+}

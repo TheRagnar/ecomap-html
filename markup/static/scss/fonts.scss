@@ -18,14 +18,45 @@ $CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
 */
 
 
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+// @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900&display=swap');
+// @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900&display=swap');
+
+
+// @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+// @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap');
 
 body {
-    font-family: "GOSTUI2", 'Roboto',
-    sans-serif;
+    font-family: "GOSTUI2", "Roboto", sans-serif;
 }
 
+
+@font-face {
+    font-family: "Roboto";
+    src: url('../fonts/android/RobotoBold.eot?#iefix');
+    src: url('../fonts/android/RobotoBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/android/RobotoBold.ttf?#iefix') format('truetype'),
+        url('../fonts/android/RobotoBold.woff?#iefix') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url('../fonts/android/RobotoMedium.eot?#iefix');
+    src: url('../fonts/android/RobotoMedium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/android/RobotoMedium.ttf?#iefix') format('truetype'),
+        url('../fonts/android/RobotoMedium.woff?#iefix') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url('../fonts/android/RobotoRegular.eot?#iefix');
+    src: url('../fonts/android/RobotoRegular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/android/RobotoRegular.ttf?#iefix') format('truetype'),
+        url('../fonts/android/RobotoRegular.woff?#iefix') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
 
 @font-face {
     font-family: 'GOSTUI2';

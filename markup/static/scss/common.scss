@@ -45,7 +45,7 @@ body {
     color: $palette-main;
     font-weight: bold;
     cursor: pointer;
-    font-family: 'Source Sans Pro', sans-serif;;
+    font-family: "GOSTUI2", "Roboto", sans-serif;
     transition: all 0.25s;
 
     &:hover {
@@ -457,7 +457,7 @@ div {
 
 h1, .h1 {
     font-size: 32px;
-    font-family: 'Source Sans Pro', sans-serif;;
+    font-family: "GOSTUI2", "Roboto", sans-serif;
     color: $palette-main;
     font-weight: bold;
     line-height: 1.4;
@@ -466,7 +466,7 @@ h1, .h1 {
 
 h2, .h2 {
     font-size: 28px;
-    font-family: 'Source Sans Pro', sans-serif;;
+    font-family: "GOSTUI2", "Roboto", sans-serif;
     color: $palette-main;
     font-weight: bold;
     line-height: 1.4;
@@ -475,7 +475,7 @@ h2, .h2 {
 
 h3, .h3 {
     font-size: 24px;
-    font-family: 'Source Sans Pro', sans-serif;;
+    font-family: "GOSTUI2", "Roboto", sans-serif;
     color: $palette-main;
     font-weight: bold;
     line-height: 1.4;
@@ -484,7 +484,7 @@ h3, .h3 {
 
 h4, .h4 {
     font-size: 19px;
-    font-family: 'Source Sans Pro', sans-serif;;
+    font-family: "GOSTUI2", "Roboto", sans-serif;
     color: $palette-main;
     font-weight: bold;
     line-height: 1.4;
@@ -493,7 +493,7 @@ h4, .h4 {
 
 h5, .h5 {
     font-size: 16px;
-    font-family: 'Source Sans Pro', sans-serif;;
+    font-family: "GOSTUI2", "Roboto", sans-serif;
     color: $palette-main;
     font-weight: bold;
     line-height: 1.4;
@@ -502,7 +502,7 @@ h5, .h5 {
 
 h6, .h6 {
     font-size: 14px;
-    font-family: 'Source Sans Pro', sans-serif;;
+    font-family: "GOSTUI2", "Roboto", sans-serif;
     color: $palette-main;
     font-weight: bold;
     line-height: 1.4;
@@ -515,7 +515,7 @@ h6, .h6 {
 }
 p {
     font-size: 18px;
-    font-family: 'Source Sans Pro', sans-serif;;
+    font-family: "GOSTUI2", "Roboto", sans-serif;
     color: $palette-main;
     margin-bottom: 20px;
 }
@@ -566,7 +566,7 @@ q, .qoute {
     margin-bottom: 30px;
     position: relative;
     font-size: 24px;
-    font-family: 'Source Sans Pro', sans-serif;;
+    font-family: "GOSTUI2", "Roboto", sans-serif;
     color: rgb(51, 51, 51);
     line-height: 1.417;
 
@@ -594,7 +594,7 @@ ul {
     li {
         padding-left: 10px;
         font-size: 18px;
-        font-family: 'Source Sans Pro', sans-serif;;
+        font-family: "GOSTUI2", "Roboto", sans-serif;
         color: $palette-main;
         line-height: 1.4;
     }
@@ -607,7 +607,6 @@ ol {
     li {
         padding-left: 10px;
         font-size: 18px;
-        font-family: 'Source Sans Pro', sans-serif;;
         color: $palette-main;
         line-height: 1.4;
     }
@@ -615,14 +614,12 @@ ol {
 
 table {
     width: 100%;
-    font-family: 'Source Sans Pro', sans-serif;;
     margin-bottom: 30px;
     font-size: 16px;
     line-height: 1.4;
 
     thead {
         font-weight: bold;
-        font-family: 'Source Sans Pro', sans-serif;;
 
         th {
             background: $white-color;
@@ -724,7 +721,6 @@ table {
         height: 58px;
         box-sizing: border-box;
         font-size: 16px;
-        font-family: 'Source Sans Pro', sans-serif;;
 
         &:focus {
             outline: none;
@@ -742,7 +738,7 @@ table {
         transition: all 0.25s;
         position: absolute;
         font-size: 16px;
-        font-family: 'Source Sans Pro', sans-serif;;
+        font-family: "GOSTUI2", "Roboto", sans-serif;
         color: rgb(132, 142, 153);
         top: 20px;
         left: 20px;
@@ -754,7 +750,7 @@ table {
     &__error {
         font-size: 14px;
         color: $red-color;
-        font-family: 'Source Sans Pro', sans-serif;;
+        font-family: "GOSTUI2", "Roboto", sans-serif;
         display: none;
     }
 
@@ -797,7 +793,7 @@ table {
         box-sizing: border-box;
         font-size: 14px;
         line-height: 20px;
-        font-family: 'Source Sans Pro', sans-serif;;
+        font-family: "GOSTUI2", "Roboto", sans-serif;
 
         &:focus {
             outline: none;
@@ -815,7 +811,7 @@ table {
         transition: all 0.25s;
         position: absolute;
         font-size: 16px;
-        font-family: 'Source Sans Pro', sans-serif;;
+        font-family: "GOSTUI2", "Roboto", sans-serif;
         color: rgb(132, 142, 153);
         top: 20px;
         left: 20px;
@@ -827,7 +823,7 @@ table {
     &__error {
         font-size: 14px;
         color: $red-color;
-        font-family: 'Source Sans Pro', sans-serif;;
+        font-family: "GOSTUI2", "Roboto", sans-serif;
         display: none;
     }
 
@@ -876,7 +872,9 @@ table {
             line-height: 56px !important;
             padding-left: 20px !important;
             font-size: 16px;
-            font-family: 'Source Sans Pro', sans-serif;;
+            font-family: "GOSTUI2",
+            "Roboto",
+            sans-serif;
         }
 
         .select2-selection__arrow {

@@ -27,6 +27,7 @@
 .main-map {
     height: 540px;
     position: relative;
+    margin-top: -80px;
 
     &__content {
         position: absolute;
@@ -36,6 +37,14 @@
         width: auto;
     }
 }
+@media screen and (max-width: 767px){
+    .main-map {
+        margin-top: -10px;
+    }
+}
+
+
+
 
 .map-controll {
     border-radius: 4px;
@@ -81,8 +90,7 @@
         .small-btn {
             margin-bottom: 10px;
         }
-
-        .btn {
+        .white-btn {
             display: none;
         }
     }
@@ -120,7 +128,7 @@
         }
 
         &__content {
-            .btn {
+            .white-btn {
                 display: block;
                 margin-top: 40px;
             }
