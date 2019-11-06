@@ -305,8 +305,6 @@
     }
 }
 
-
-
 .rating {
     display: flex;
     flex-flow: row nowrap;
@@ -367,4 +365,35 @@
     height: 1px;
     width: 100%;
     background-color: rgb(208, 212, 221);
+}
+
+html[color-schema="color-black"] .projects,
+html[color-schema="color-black"] .project,
+html[color-schema="color-black"] .sidebar__info{
+    background-color: #000000;
+}
+
+html[color-schema="color-black"] .project__title,
+html[color-schema="color-black"] .project__text p,
+html[color-schema="color-black"] .project__footer,
+html[color-schema="color-black"] .project__footer-social a,
+html[color-schema="color-black"] .project__comeback,
+html[color-schema="color-black"] .sidebar__btn .btn,
+//html[color-schema="color-black"] .sidebar__info .label,
+html[color-schema="color-black"] .sidebar__info .text-2,
+html[color-schema="color-black"] .sidebar__info .info-project__title h3,
+html[color-schema="color-black"] .sidebar__info .info-project__name {
+    color: #ffffff;
+}
+
+html[color-schema="color-black"] .project__footer {
+    border-top-color: #ffffff;
+}
+
+html[color-schema="color-black"] .sidebar__rating,
+html[color-schema="color-black"] .sidebar__info,
+html[color-schema="color-black"] .sections-links a,
+html[color-schema="color-black"] .rating__num {
+    background: #000000;
+    border: 1px solid #ffffff;
 }
