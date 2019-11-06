@@ -30,11 +30,24 @@
         text-decoration: none;
     }
 }
+html[color-schema="color-black"] .breadcrumbs {
+    background-color: #000000;
+}
+html[color-schema="color-black"] .breadcrumbs__item,
+html[color-schema="color-black"] .breadcrumbs__item:after,
+html[color-schema="color-black"] .breadcrumbs__link,
+html[color-schema="color-black"] .page-title {
+    color: #ffffff;
+}
 
 .page-header {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #d0d4dd;
+}
+
+html[color-schema="color-black"] .page-header {
+    border-bottom-color: #ffffff;
 }
 
 .page-title {
@@ -66,6 +79,12 @@
             border-bottom: 2px solid $palette-secondary;
         }
     }
+}
+
+html[color-schema="color-black"] .page-tab__item,
+html[color-schema="color-black"] .page-tab__item.active {
+    color: #ffffff;
+    border-bottom-color: #ffffff;
 }
 
 @include media-only(md) {
@@ -112,19 +131,21 @@
         background-color: $palette-secondary;
         color: $white-color;
     }
+}
 
-    @include media-only(xl) {
+html[color-schema="color-black"] .tags,
+html[color-schema="color-black"] .tags__item {
+    background: #000000;
+}
 
-    }
-    @include media-only(lg) {
+html[color-schema="color-black"] .tags__item {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
 
-    }
-    @include media-only(md) {
-
-    }
-    @include media-only(sm) {
-
-    }
+html[color-schema="color-black"] .tags__item-active {
+    background: #ffffff;
+    color: #000000;
 }
 
 .pagination {
@@ -183,6 +204,7 @@
         background-repeat: no-repeat;
         border-radius: 4px;
         box-sizing: border-box;
+        padding: 0;
 
         &:hover {
             .pagination__link {
@@ -383,4 +405,40 @@
             padding: 25px 25px;
         }
     }
+}
+
+html[color-schema="color-black"] .projects__item,
+html[color-schema="color-black"] .projects__rating,
+html[color-schema="color-black"] .projects__item:hover .projects__rating{
+    background: #000000;
+    border: 1px solid #ffffff;
+}
+
+html[color-schema="color-black"] .projects__item:hover {
+    background: #ffffff;
+}
+
+html[color-schema="color-black"] .projects__item:hover .projects__title,
+html[color-schema="color-black"] .projects__item:hover .projects__info {
+    color: #000000;
+}
+
+html[color-schema="color-black"] .projects__info,
+html[color-schema="color-black"] .projects__title {
+    color: #ffffff;
+}
+
+html[color-schema="color-black"] .pagination__link {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+html[color-schema="color-black"] .pagination__link:hover {
+    color: #000000;
+    background: #ffffff;
+}
+
+html[color-schema="color-black"] .pagination__next .pagination__link,
+html[color-schema="color-black"] .pagination__prev .pagination__link {
+    border: none
 }

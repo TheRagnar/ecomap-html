@@ -197,3 +197,39 @@
     }
 }
 
+html[color-schema="color-black"] .articles,
+html[color-schema="color-black"] .article,
+html[color-schema="color-black"] .sidebar-tab__message {
+    background: #000000;
+}
+
+html[color-schema="color-black"] .article__title,
+html[color-schema="color-black"] .article__date,
+html[color-schema="color-black"] .article__text,
+html[color-schema="color-black"] .article__text p,
+html[color-schema="color-black"] .articles__title,
+html[color-schema="color-black"] .articles__date,
+html[color-schema="color-black"] .articles__text,
+html[color-schema="color-black"] .articles__text p,
+html[color-schema="color-black"] .articles__info a,
+html[color-schema="color-black"] .popular-article__more,
+html[color-schema="color-black"] .popular-article h2,
+html[color-schema="color-black"] .sidebar-tab__link {
+    color: #ffffff;
+}
+
+html[color-schema="color-black"] .sidebar-tab__item,
+html[color-schema="color-black"] .sidebar-tab__item.active {
+    border-color: #ffffff;
+}
+
+html[color-schema="color-black"] .sidebar-tab__item.active .sidebar-tab__link,
+html[color-schema="color-black"] .sidebar__btn .btn {
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+html[color-schema="color-black"] .sidebar-tab__link:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
