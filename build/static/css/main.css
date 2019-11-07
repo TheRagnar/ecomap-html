@@ -8389,6 +8389,10 @@ html[color-schema="color-black"] .sidebar-tab__link:hover {
   text-decoration: none;
 }
 
+.topbar__item:hover a {
+  color: #ffffff;
+}
+
 .lg-backdrop.in {
   opacity: 0.8 !important;
 }
@@ -8515,7 +8519,7 @@ html[color-schema="color-black"] .sidebar-tab__link:hover {
   color: #18b4bb;
 }
 
-.main-title__more .fas {
+.main-title__more .fa {
   margin-left: 10px;
   font-size: 10px;
 }
@@ -10415,6 +10419,11 @@ html[color-schema="color-black"] .tags__item-active {
     min-height: 310px;
     padding: 25px 25px;
   }
+}
+
+.project__comeback .fa {
+  font-size: 10px;
+  margin-right: 10px;
 }
 
 html[color-schema="color-black"] .projects__item,

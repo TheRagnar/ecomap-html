@@ -407,6 +407,14 @@ html[color-schema="color-black"] .tags__item-active {
     }
 }
 
+
+.project__comeback .fa {
+    font-size: 10px;
+    margin-right: 10px;
+}
+
+
+
 html[color-schema="color-black"] .projects__item,
 html[color-schema="color-black"] .projects__rating,
 html[color-schema="color-black"] .projects__item:hover .projects__rating{
@@ -442,3 +450,6 @@ html[color-schema="color-black"] .pagination__next .pagination__link,
 html[color-schema="color-black"] .pagination__prev .pagination__link {
     border: none
 }
+
+
+
