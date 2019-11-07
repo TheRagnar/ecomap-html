@@ -201,11 +201,11 @@ import '../../components/content-page/content';
 
 
 
-     var btnMore = document.querySelector(".more");
-     btnMore.onclick = function() {
-        document.querySelector(".search-form__sections").classList.toggle('open');
-         return false;
-     };
+    //  var btnMore = document.querySelector(".more");
+    //  btnMore.onclick = function() {
+    //     document.querySelector(".search-form__sections").classList.toggle('open');
+    //      return false;
+    //  };
 
 
 
