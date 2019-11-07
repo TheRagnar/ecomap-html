@@ -200,8 +200,11 @@ import '../../components/content-page/content';
         });
 
 
-            $('.select').on('change', function(e){ alert(1); })
+        $('.more').on('click', function () {
+            $(this).parents('.search-form__sections').toggleClass('open');
+        })
     //  var btnMore = document.querySelector(".more");
+
     //  btnMore.onclick = function() {
     //     document.querySelector(".search-form__sections").classList.toggle('open');
     //      return false;
