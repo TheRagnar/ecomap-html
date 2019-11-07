@@ -444,6 +444,7 @@
         align-items: center;
         height: 28px;
         padding: 6px 14px;
+        min-width: auto;
         span {
             display: block;
             position: relative;
@@ -466,6 +467,11 @@
         }
     }
 }
+.search-form__sections .btn:focus {
+    color: #ffffff;
+}
+
+
 .search-form__sections.open {
   height: auto;
 }

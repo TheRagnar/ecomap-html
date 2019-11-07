@@ -193,12 +193,14 @@
         color: rgb(176, 232, 234);
         display: flex;
         align-items: center;
-
-        .fas {
+        justify-content: space-between;
+        .fa {
             font-size: 18px;
             color: #ffa800;
             margin-left: auto;
             margin-right: 10px;
+            flex: 1;
+            text-align: right;
         }
 
         span {
