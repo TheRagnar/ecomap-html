@@ -200,7 +200,7 @@ import '../../components/content-page/content';
         });
 
 
-
+            $('.select').on('change', function(e){ alert(1); })
     //  var btnMore = document.querySelector(".more");
     //  btnMore.onclick = function() {
     //     document.querySelector(".search-form__sections").classList.toggle('open');
