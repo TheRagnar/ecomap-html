@@ -6775,6 +6775,13 @@ html[color-schema="color-black"] .sidebar-tab__link:hover {
   }
 }
 
+.articles__more-button .fa {
+  position: relative;
+  font-size: 10px;
+  margin-left: 10px;
+  top: -1px;
+}
+
 /*profile*/
 .prof-info {
   margin-bottom: 50px;
@@ -8397,6 +8404,14 @@ html[color-schema="color-black"] .sidebar-tab__link:hover {
 
 .topbar__item:hover a {
   color: #ffffff;
+}
+
+.logo .logo__title {
+  font-size: 18px;
+}
+
+a.logo:hover {
+  text-decoration: none;
 }
 
 .lg-backdrop.in {
