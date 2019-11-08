@@ -326,6 +326,17 @@
     justify-content: space-between;
     margin-bottom: 20px;
 }
+@media screen and (max-width: 991px) {
+    .search-form__inputs {
+        flex-flow: column wrap;
+        .search-form__search-box {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+
+
 
 .obj-item__label {
   font-size: 12px;
@@ -389,6 +400,11 @@
     }
     .label {
         color: $palette-gray2;
+        text-align: left;
+        font-size: 100%;
+        font-weight: 400;
+        padding: 0;
+        margin-bottom: 5px;
     }
     .text {
         margin-bottom: 10px;

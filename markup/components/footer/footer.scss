@@ -128,3 +128,52 @@
         color: #848e99;
     }
 }
+
+@media screen and (max-width: 991px){
+    .footer__left {
+        flex: 1 0 300px;
+        margin-right: 30px;
+    }
+    .footer__right .footer__menu {
+        flex-flow: column;
+    }
+    .footer__right .footer__menu .footer__row:first-child {
+        margin-bottom: 40px;
+    }
+    
+}
+@media screen and (max-width: 767px) {
+    .footer__container {
+        flex-flow: column;
+    }
+    .footer__left {
+        flex: 1 0 100%;
+        margin-right:0;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    .footer__right {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        .footer__menu {
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            .footer__row:first-child {
+                margin-bottom: 0;
+            }
+            .footer__row {
+                margin-top: 40px;
+            }
+        }
+    }
+
+
+
+
+
+}
