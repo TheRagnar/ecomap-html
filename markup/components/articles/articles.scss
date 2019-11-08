@@ -113,7 +113,7 @@
             }
         }
 
-        .fas {
+        .fa {
             font-size: 12px;
             margin-left: 5px;
         }
@@ -179,4 +179,8 @@
         margin-left: 10px;
         top: -1px;
     }
+}
+
+.articles__name:hover {
+    text-decoration: none;
 }
