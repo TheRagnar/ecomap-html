@@ -412,6 +412,22 @@ html[color-schema="color-black"] .tags__item-active {
     font-size: 10px;
     margin-right: 10px;
 }
+.sidebar .vote__btn {
+    border: 1px solid #a9abb1;
+    color: #a9abb1;
+
+    &:hover {
+        border: 1px solid #18b4bb;
+        color: #18b4bb;
+    }
+}
+
+.sidebar .vote__btn.active {
+    border: 1px solid #18b4bb;
+    color: #18b4bb;
+}
+
+
 
 
 

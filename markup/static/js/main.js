@@ -1,6 +1,6 @@
 'use strict';
 import 'jquery'
-import './select2.full.min';
+// import './select2.full.min';
 import '../../components/menu/menu';
 import '../../components/header/header';
 import '../../components/content-page/content';
@@ -199,23 +199,19 @@ import '../../components/content-page/content';
             // return false;
         });
 
+        
+        $('.vote__btn').on('click', function () {
+            if (!($(this).hasClass('active'))) {
+                $('.vote__btn').removeClass('active');
+                $(this).addClass('active');
+            } 
+            else {
+                $(this).removeClass('active');
+            }
+        });
 
         $('.more').on('click', function () {
             $(this).parents('.search-form__sections').toggleClass('open');
         })
-    //  var btnMore = document.querySelector(".more");
-
-    //  btnMore.onclick = function() {
-    //     document.querySelector(".search-form__sections").classList.toggle('open');
-    //      return false;
-    //  };
-
-
-
     });
-
-
 })(jQuery);
-
-
- // }(jQuery));
