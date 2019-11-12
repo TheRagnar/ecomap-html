@@ -58,3 +58,39 @@
         margin: 0 auto 20px auto;
     }
 }
+
+html[color-schema="color-black"] .wrap-block {
+    background-color: rgba(254, 254, 254, 0.2);
+}
+
+html[color-schema="color-black"] .gray-text,
+html[color-schema="color-black"] .wrap-text p {
+    color: #ffffff;
+}
+
+
+html[color-schema="color-brown"] .gray-text,
+html[color-schema="color-brown"] .wrap-text p {
+    color: #a9e44d;
+}
+
+html[color-schema="color-beige"] .wrap-block {
+    background-color: #f7f3d6;
+    border: 1px solid #4d4b43;
+}
+
+html[color-schema="color-beige"] .gray-text,
+html[color-schema="color-beige"] .wrap-text p {
+    color: #4d4b43;
+}
+
+
+html[color-schema="color-blue"] .wrap-block {
+    background-color: #9dd1ff;
+    border: 1px solid #063462;
+}
+
+html[color-schema="color-blue"] .gray-text,
+html[color-schema="color-blue"] .wrap-text p {
+    color: #063462;
+}

@@ -25,6 +25,22 @@ body {
     background: #f4f7fb;
 }
 
+html[color-schema="color-black"] body {
+    background-color: #000000;
+}
+
+html[color-schema="color-brown"] body {
+    background-color: #3b2716;
+}
+
+html[color-schema="color-beige"] body {
+    background-color: #f7f3d6;
+}
+
+html[color-schema="color-blue"] body {
+    background-color: #9dd1ff;
+}
+
 .content-page {
     padding-bottom: 150px;
 }
@@ -314,6 +330,46 @@ body {
     }
 }
 
+html[color-schema="color-brown"] .border-btn {
+    border-color: #a9e44d;
+    color: #a9e44d;
+}
+
+html[color-schema="color-brown"] .border-btn:hover,
+html[color-schema="color-brown"] .border-btn[data-hover="true"],
+html[color-schema="color-brown"] .border-btn:focus,
+html[color-schema="color-brown"] .border-btn[data-focus="true"] {
+    background: #3b2716;
+    border-color: #3b2716;
+    color: #a9e44d;
+};
+
+html[color-schema="color-beige"] .border-btn {
+    border-color: #4d4b43;
+    color: #4d4b43;
+}
+
+html[color-schema="color-beige"] .border-btn:hover,
+html[color-schema="color-beige"] .border-btn[data-hover="true"],
+html[color-schema="color-beige"] .border-btn:focus,
+html[color-schema="color-beige"] .border-btn[data-focus="true"] {
+    background: #4d4b43;
+    color: #f7f3d6;
+};
+
+html[color-schema="color-blue"] .border-btn {
+    border-color: #063462;
+    color: #063462;
+}
+
+html[color-schema="color-blue"] .border-btn:hover,
+html[color-schema="color-blue"] .border-btn[data-hover="true"],
+html[color-schema="color-blue"] .border-btn:focus,
+html[color-schema="color-blue"] .border-btn[data-focus="true"] {
+    background: #063462;
+    color: #9dd1ff;
+};
+
 .gray-btn {
     width: 100%;
     color: $palette-gray2;
@@ -520,6 +576,70 @@ p {
     margin-bottom: 20px;
 }
 
+html[color-schema="color-black"] h1,
+html[color-schema="color-black"] .h1,
+html[color-schema="color-black"] h2,
+html[color-schema="color-black"] .h2,
+html[color-schema="color-black"] h3,
+html[color-schema="color-black"] .h3,
+html[color-schema="color-black"] h4,
+html[color-schema="color-black"] .h4,
+html[color-schema="color-black"] h5,
+html[color-schema="color-black"] .h5,
+html[color-schema="color-black"] h6,
+html[color-schema="color-black"] .h6,
+html[color-schema="color-black"] p {
+    color: #ffffff;
+}
+
+html[color-schema="color-brown"] h1,
+html[color-schema="color-brown"] .h1,
+html[color-schema="color-brown"] h2,
+html[color-schema="color-brown"] .h2,
+html[color-schema="color-brown"] h3,
+html[color-schema="color-brown"] .h3,
+html[color-schema="color-brown"] h4,
+html[color-schema="color-brown"] .h4,
+html[color-schema="color-brown"] h5,
+html[color-schema="color-brown"] .h5,
+html[color-schema="color-brown"] h6,
+html[color-schema="color-brown"] .h6,
+html[color-schema="color-brown"] p {
+    color: #a9e44d;
+}
+
+html[color-schema="color-beige"] h1,
+html[color-schema="color-beige"] .h1,
+html[color-schema="color-beige"] h2,
+html[color-schema="color-beige"] .h2,
+html[color-schema="color-beige"] h3,
+html[color-schema="color-beige"] .h3,
+html[color-schema="color-beige"] h4,
+html[color-schema="color-beige"] .h4,
+html[color-schema="color-beige"] h5,
+html[color-schema="color-beige"] .h5,
+html[color-schema="color-beige"] h6,
+html[color-schema="color-beige"] .h6,
+html[color-schema="color-beige"] p {
+    color: #4d4b43;
+}
+
+html[color-schema="color-blue"] h1,
+html[color-schema="color-blue"] .h1,
+html[color-schema="color-blue"] h2,
+html[color-schema="color-blue"] .h2,
+html[color-schema="color-blue"] h3,
+html[color-schema="color-blue"] .h3,
+html[color-schema="color-blue"] h4,
+html[color-schema="color-blue"] .h4,
+html[color-schema="color-blue"] h5,
+html[color-schema="color-blue"] .h5,
+html[color-schema="color-blue"] h6,
+html[color-schema="color-blue"] .h6,
+html[color-schema="color-blue"] p {
+    color: #063462;
+}
+
 a {
     color: $palette-secondary;
     text-decoration: none;
@@ -643,6 +763,44 @@ table {
 }
 
 
+
+html[color-schema="color-black"] ul li,
+html[color-schema="color-black"] ol li,
+html[color-schema="color-black"] table tbody tr {
+    color: #ffffff;
+}
+
+html[color-schema="color-brown"] table thead th {
+    background: #a9e44d;
+    color: #3b2716;
+}
+
+html[color-schema="color-brown"] ul li,
+html[color-schema="color-brown"] ol li,
+html[color-schema="color-brown"] table tbody tr {
+    color: #a9e44d;
+    border-color: #a9e44d;
+}
+
+html[color-schema="color-beige"] table thead th {
+    background: #4d4b43;
+    color: #f7f3d6;
+}
+
+html[color-schema="color-beige"] ul li,
+html[color-schema="color-beige"] ol li,
+html[color-schema="color-beige"] table tbody tr {
+    color: #4d4b43;
+    border-color: #4d4b43;
+}
+
+html[color-schema="color-blue"] ul li,
+html[color-schema="color-blue"] ol li,
+html[color-schema="color-blue"] table tbody tr {
+    color: #063462;
+    border-color: #063462;
+}
+
 /*text page*/
 .title-page {
     margin-bottom: 50px;
@@ -650,6 +808,27 @@ table {
 
 .bg-gray {
     background: $palette-gray;
+}
+
+html[color-schema="color-black"] .bg-gray,
+html[color-schema="color-black"] .bg-white {
+    background: #000000;
+}
+
+html[color-schema="color-brown"] .bg-gray,
+html[color-schema="color-brown"] .bg-white {
+    background: #3b2716;
+}
+
+
+html[color-schema="color-beige"] .bg-gray,
+html[color-schema="color-beige"] .bg-white {
+    background: #f7f3d6;
+}
+
+html[color-schema="color-blue"] .bg-gray,
+html[color-schema="color-blue"] .bg-white {
+    background: #9dd1ff;
 }
 
 .bg-white {

@@ -187,16 +187,19 @@
 .sidebar .sidebar__info {
     font-size: 15px;
     margin-bottom: 20px;
+
     .text-2 {
         font-weight: 400;
         line-height: 1.2;
         margin-bottom: 10px;
     }
+
     .text-2:last-child {
         margin-bottom: 20px;
     }
 }
 
+/*[color-schema="color-black"]*/
 html[color-schema="color-black"] .articles,
 html[color-schema="color-black"] .article,
 html[color-schema="color-black"] .sidebar-tab__message {
@@ -214,7 +217,8 @@ html[color-schema="color-black"] .articles__text p,
 html[color-schema="color-black"] .articles__info a,
 html[color-schema="color-black"] .popular-article__more,
 html[color-schema="color-black"] .popular-article h2,
-html[color-schema="color-black"] .sidebar-tab__link {
+html[color-schema="color-black"] .sidebar-tab__link,
+html[color-schema="color-black"] .sidebar__social p {
     color: #ffffff;
 }
 
@@ -231,5 +235,123 @@ html[color-schema="color-black"] .sidebar__btn .btn {
 
 html[color-schema="color-black"] .sidebar-tab__link:hover {
     color: #ffffff;
+    text-decoration: underline;
+}
+
+/*[color-schema="color-brown"]*/
+html[color-schema="color-brown"] .articles,
+html[color-schema="color-brown"] .article,
+html[color-schema="color-brown"] .sidebar-tab__message {
+    background: #3b2716;
+}
+
+html[color-schema="color-brown"] .article__title,
+html[color-schema="color-brown"] .article__date,
+html[color-schema="color-brown"] .article__text,
+html[color-schema="color-brown"] .article__text p,
+html[color-schema="color-brown"] .articles__title,
+html[color-schema="color-brown"] .articles__date,
+html[color-schema="color-brown"] .articles__text,
+html[color-schema="color-brown"] .articles__text p,
+html[color-schema="color-brown"] .articles__info a,
+html[color-schema="color-brown"] .popular-article__more,
+html[color-schema="color-brown"] .popular-article h2,
+html[color-schema="color-brown"] .sidebar-tab__link,
+html[color-schema="color-brown"] .sidebar__social p {
+    color: #a9e44d;
+}
+
+html[color-schema="color-brown"] .sidebar-tab__item,
+html[color-schema="color-brown"] .sidebar-tab__item.active {
+    border-color: #a9e44d;
+}
+
+html[color-schema="color-brown"] .sidebar-tab__item.active .sidebar-tab__link,
+html[color-schema="color-brown"] .sidebar__btn .btn {
+    border-color: #a9e44d;
+    color: #a9e44d;
+}
+
+html[color-schema="color-brown"] .sidebar-tab__link:hover {
+    color: #a9e44d;
+    text-decoration: underline;
+}
+
+/*[color-schema="color-beige"]*/
+html[color-schema="color-beige"] .articles,
+html[color-schema="color-beige"] .article,
+html[color-schema="color-beige"] .sidebar-tab__message {
+    background: #f7f3d6;
+}
+
+html[color-schema="color-beige"] .article__title,
+html[color-schema="color-beige"] .article__date,
+html[color-schema="color-beige"] .article__text,
+html[color-schema="color-beige"] .article__text p,
+html[color-schema="color-beige"] .articles__title,
+html[color-schema="color-beige"] .articles__date,
+html[color-schema="color-beige"] .articles__text,
+html[color-schema="color-beige"] .articles__text p,
+html[color-schema="color-beige"] .articles__info a,
+html[color-schema="color-beige"] .popular-article__more,
+html[color-schema="color-beige"] .popular-article h2,
+html[color-schema="color-beige"] .sidebar-tab__link,
+html[color-schema="color-beige"] .sidebar__social p {
+    color: #4d4b43;
+}
+
+html[color-schema="color-beige"] .sidebar-tab__item,
+html[color-schema="color-beige"] .sidebar-tab__item.active {
+    border-color: #4d4b43;
+}
+
+html[color-schema="color-beige"] .sidebar-tab__item.active .sidebar-tab__link,
+html[color-schema="color-beige"] .sidebar__btn .btn {
+    border-color: #4d4b43;
+    color: #4d4b43;
+}
+
+html[color-schema="color-beige"] .sidebar-tab__link:hover {
+    color: #4d4b43;
+    text-decoration: underline;
+}
+
+
+/*[color-schema="color-blue"]*/
+html[color-schema="color-blue"] .articles,
+html[color-schema="color-blue"] .article,
+html[color-schema="color-blue"] .sidebar-tab__message {
+    background: #9dd1ff;
+}
+
+html[color-schema="color-blue"] .article__title,
+html[color-schema="color-blue"] .article__date,
+html[color-schema="color-blue"] .article__text,
+html[color-schema="color-blue"] .article__text p,
+html[color-schema="color-blue"] .articles__title,
+html[color-schema="color-blue"] .articles__date,
+html[color-schema="color-blue"] .articles__text,
+html[color-schema="color-blue"] .articles__text p,
+html[color-schema="color-blue"] .articles__info a,
+html[color-schema="color-blue"] .popular-article__more,
+html[color-schema="color-blue"] .popular-article h2,
+html[color-schema="color-blue"] .sidebar-tab__link,
+html[color-schema="color-blue"] .sidebar__social p {
+    color: #063462;
+}
+
+html[color-schema="color-blue"] .sidebar-tab__item,
+html[color-schema="color-blue"] .sidebar-tab__item.active {
+    border-color: #063462;
+}
+
+html[color-schema="color-blue"] .sidebar-tab__item.active .sidebar-tab__link,
+html[color-schema="color-blue"] .sidebar__btn .btn {
+    border-color: #063462;
+    color: #063462;
+}
+
+html[color-schema="color-blue"] .sidebar-tab__link:hover {
+    color: #063462;
     text-decoration: underline;
 }
